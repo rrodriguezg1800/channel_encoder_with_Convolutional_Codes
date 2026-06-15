@@ -1,0 +1,95 @@
+//==============================================================
+// Top: CodConv3 (modular: CONTROL + ACUMULADOR + DATAPATH)
+//  - SIN salida1/salida2 hacia afuera
+//  - Exporta t1_o/t2_o (paridades crudas) para debug/enlace interno
+//==============================================================
+module Codificador #(
+    parameter integer K = 3,
+    parameter integer N = 8,
+    parameter [5:0]  RESPUESTA = 6'b111011,
+    parameter integer GUARD_PAIRS = 1
+)(
+    input  wire clk,
+    input  wire rst,
+    input  wire iniciar,
+    input  wire [N-1:0] mensaje,
+    output wire  listo_o,     // (desde CONTROL)
+    output wire  par_valid_o, // (desde CONTROL)
+    output wire [2*((N+K-1)+GUARD_PAIRS)-1:0] codigo_o_acumulado,
+    output wire  t1_o,        // NUEVO: G1 cruda
+    output wire  t2_o         // NUEVO: G2 cruda
+);
+    localparam integer REAL_STEPS  = (N + K - 1);
+    localparam integer TOTAL_PAIRS = REAL_STEPS + GUARD_PAIRS;
+    localparam integer CNTW        = $clog2(TOTAL_PAIRS+1);
+
+    // --------- Señales internas ---------
+    wire        load_frame_w;
+    wire        step_en_w;
+    wire        consumir_msb_w;
+    wire [CNTW-1:0] contador_w;
+
+    wire        t1_w, t2_w;
+    wire        entrada_bit_w;
+    wire [K-1:0] shift_next_w;
+
+    // --------- CONTROL ---------
+    CodConv3_Control #(
+        .K(K), .N(N), .GUARD_PAIRS(GUARD_PAIRS)
+    ) u_ctrl (
+        .clk            (clk),
+        .rst            (rst),
+        .iniciar        (iniciar),
+        .load_frame_o   (load_frame_w),
+        .step_en_o      (step_en_w),
+        .consumir_msb_o (consumir_msb_w),
+        .par_valid_o    (par_valid_o),
+        .listo_o        (listo_o),
+        .contador_o     (contador_w)
+    );
+
+    // --------- DATAPATH ---------
+    MsgP2S_exact #(.N(N)) u_msg (
+        .clk           (clk),
+        .rst           (rst),
+        .load_i        (load_frame_w),
+        .mensaje_i     (mensaje),
+        .shift_en_i    (step_en_w),
+        .consumir_i    (consumir_msb_w),
+        .entrada_bit_o (entrada_bit_w)
+    );
+
+    RegK_next_exact #(.K(K)) u_regk (
+        .clk          (clk),
+        .rst          (rst),
+        .load_zero_i  (load_frame_w),
+        .step_en_i    (step_en_w),
+        .bit_in_i     (entrada_bit_w),
+        .next_o       (shift_next_w)
+    );
+
+    Paridades_exact #(.K(K), .RESPUESTA(RESPUESTA)) u_par (
+        .state_next_i (shift_next_w),
+        .t1_o         (t1_w),
+        .t2_o         (t2_w)
+    );
+
+    // --------- ACUMULADOR (sin salida1/salida2) ---------
+    CodConv3_Acum #(
+        .K(K), .N(N), .GUARD_PAIRS(GUARD_PAIRS)
+    ) u_acum (
+        .clk                  (clk),
+        .rst                  (rst),
+        .load_frame_i         (load_frame_w),
+        .step_en_i            (step_en_w),
+        .contador_i           (contador_w),
+        .t1_i                 (t1_w),
+        .t2_i                 (t2_w),
+        .codigo_o_acumulado_o (codigo_o_acumulado)
+    );
+
+    // Exponer paridades crudas
+    assign t1_o = t1_w;
+    assign t2_o = t2_w;
+endmodule
+
