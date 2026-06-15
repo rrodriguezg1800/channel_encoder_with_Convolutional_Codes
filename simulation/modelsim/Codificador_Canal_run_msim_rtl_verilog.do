@@ -1,0 +1,26 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v}
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc"  Top_Codificador_vlg_tst
+
+add wave *
+view structure
+view signals
+run -all

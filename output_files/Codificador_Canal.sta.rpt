@@ -1,0 +1,789 @@
+Timing Analyzer report for Codificador_Canal
+Sat Nov 15 14:14:25 2025
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk_in'
+ 12. Setup: 'Divisor_de_Frecuencia:u_div|clk_out'
+ 13. Hold: 'clk_in'
+ 14. Hold: 'Divisor_de_Frecuencia:u_div|clk_out'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; Codificador_Canal                                   ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                   ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; Clock Name                          ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                 ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; clk_in                              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_in }                              ;
+; Divisor_de_Frecuencia:u_div|clk_out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Divisor_de_Frecuencia:u_div|clk_out } ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Fmax Summary                                                              ;
++------------+-----------------+-------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                          ; Note ;
++------------+-----------------+-------------------------------------+------+
+; 130.31 MHz ; 130.31 MHz      ; clk_in                              ;      ;
+; 132.71 MHz ; 132.71 MHz      ; Divisor_de_Frecuencia:u_div|clk_out ;      ;
++------------+-----------------+-------------------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------------------------------------+
+; Setup Summary                                                ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; clk_in                              ; -6.674 ; -142.505      ;
+; Divisor_de_Frecuencia:u_div|clk_out ; -6.535 ; -229.417      ;
++-------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------+
+; Hold Summary                                                 ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; clk_in                              ; -1.617 ; -1.617        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; 1.651  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Minimum Pulse Width Summary                                  ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; clk_in                              ; -2.289 ; -2.289        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; 0.234  ; 0.000         ;
++-------------------------------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk_in'                                                                                                                                                    ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -6.674 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.341      ;
+; -6.660 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.327      ;
+; -6.610 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.277      ;
+; -6.601 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.268      ;
+; -6.567 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.234      ;
+; -6.551 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.218      ;
+; -6.517 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.184      ;
+; -6.471 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.138      ;
+; -6.412 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.079      ;
+; -6.406 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.073      ;
+; -6.405 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.072      ;
+; -6.399 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.066      ;
+; -6.378 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.045      ;
+; -6.359 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.026      ;
+; -6.355 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.022      ;
+; -6.347 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.014      ;
+; -6.334 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 7.001      ;
+; -6.332 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.999      ;
+; -6.325 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.992      ;
+; -6.316 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.983      ;
+; -6.313 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.980      ;
+; -6.313 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.980      ;
+; -6.300 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.967      ;
+; -6.290 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.957      ;
+; -6.282 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.949      ;
+; -6.276 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.943      ;
+; -6.275 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.942      ;
+; -6.275 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.942      ;
+; -6.272 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.939      ;
+; -6.267 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.934      ;
+; -6.266 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.933      ;
+; -6.263 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.930      ;
+; -6.257 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.924      ;
+; -6.247 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.914      ;
+; -6.241 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.908      ;
+; -6.230 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.897      ;
+; -6.223 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.890      ;
+; -6.219 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.886      ;
+; -6.217 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.884      ;
+; -6.216 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.883      ;
+; -6.216 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.883      ;
+; -6.213 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.880      ;
+; -6.206 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[13] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.873      ;
+; -6.183 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.850      ;
+; -6.179 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.846      ;
+; -6.169 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.836      ;
+; -6.157 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.824      ;
+; -6.156 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[13] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.823      ;
+; -6.152 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[18] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.819      ;
+; -6.143 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.810      ;
+; -6.136 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.803      ;
+; -6.124 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.791      ;
+; -6.123 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.790      ;
+; -6.104 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.771      ;
+; -6.102 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[18] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.769      ;
+; -6.097 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[14] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.764      ;
+; -6.078 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.745      ;
+; -6.071 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.738      ;
+; -6.061 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.728      ;
+; -6.059 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.726      ;
+; -6.047 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[14] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.714      ;
+; -6.032 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[11] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.699      ;
+; -6.031 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.698      ;
+; -6.024 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[8]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.691      ;
+; -6.024 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.691      ;
+; -6.021 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.688      ;
+; -6.017 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.684      ;
+; -6.017 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[13] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.684      ;
+; -6.015 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.682      ;
+; -6.012 ; Divisor_de_Frecuencia:u_div|contador[9]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.679      ;
+; -6.006 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.673      ;
+; -6.001 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[16] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.668      ;
+; -5.999 ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.666      ;
+; -5.999 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.666      ;
+; -5.998 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.665      ;
+; -5.994 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.661      ;
+; -5.988 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.655      ;
+; -5.987 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.654      ;
+; -5.985 ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.652      ;
+; -5.981 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.648      ;
+; -5.974 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.641      ;
+; -5.969 ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.636      ;
+; -5.966 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.633      ;
+; -5.963 ; Divisor_de_Frecuencia:u_div|contador[8]  ; Divisor_de_Frecuencia:u_div|contador[18] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.630      ;
+; -5.961 ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.628      ;
+; -5.961 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.628      ;
+; -5.955 ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.622      ;
+; -5.951 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[16] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.618      ;
+; -5.948 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.615      ;
+; -5.946 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.613      ;
+; -5.946 ; Divisor_de_Frecuencia:u_div|contador[12] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.613      ;
+; -5.944 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.611      ;
+; -5.944 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.611      ;
+; -5.941 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.608      ;
+; -5.937 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.604      ;
+; -5.929 ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.596      ;
+; -5.926 ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.593      ;
+; -5.925 ; Divisor_de_Frecuencia:u_div|contador[10] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.592      ;
+; -5.916 ; Divisor_de_Frecuencia:u_div|contador[13] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.583      ;
+; -5.911 ; Divisor_de_Frecuencia:u_div|contador[7]  ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in       ; clk_in      ; 1.000        ; 0.000      ; 6.578      ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'Divisor_de_Frecuencia:u_div|clk_out'                                                                                                                                                                                                           ;
++--------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack  ; From Node                                             ; To Node                                                          ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; -6.535 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.202      ;
+; -6.529 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.196      ;
+; -6.467 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.134      ;
+; -6.461 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.128      ;
+; -6.369 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.036      ;
+; -6.369 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 7.036      ;
+; -6.296 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.963      ;
+; -6.294 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.961      ;
+; -6.276 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.943      ;
+; -6.276 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.943      ;
+; -6.226 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.893      ;
+; -6.120 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.787      ;
+; -6.117 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.784      ;
+; -6.117 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.784      ;
+; -6.112 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[13] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.779      ;
+; -6.100 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.767      ;
+; -6.099 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.766      ;
+; -6.094 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.761      ;
+; -6.081 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.748      ;
+; -6.081 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.748      ;
+; -6.079 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[16] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.746      ;
+; -6.079 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.746      ;
+; -6.052 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.719      ;
+; -6.044 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[13] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.711      ;
+; -6.039 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[18] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.706      ;
+; -6.037 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[20] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.704      ;
+; -6.021 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[17] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.688      ;
+; -5.996 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.663      ;
+; -5.861 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.528      ;
+; -5.859 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.526      ;
+; -5.853 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.520      ;
+; -5.847 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.514      ;
+; -5.823 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.490      ;
+; -5.823 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.490      ;
+; -5.821 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.488      ;
+; -5.821 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.488      ;
+; -5.797 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.464      ;
+; -5.797 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.464      ;
+; -5.778 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.445      ;
+; -5.778 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.445      ;
+; -5.769 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[17] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.436      ;
+; -5.769 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[16] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.436      ;
+; -5.759 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.426      ;
+; -5.756 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.423      ;
+; -5.756 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.423      ;
+; -5.754 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.421      ;
+; -5.754 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.421      ;
+; -5.732 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.399      ;
+; -5.732 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.399      ;
+; -5.712 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[16] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.379      ;
+; -5.712 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.379      ;
+; -5.706 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.373      ;
+; -5.705 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[17] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.372      ;
+; -5.700 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.367      ;
+; -5.698 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.365      ;
+; -5.698 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.365      ;
+; -5.697 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.364      ;
+; -5.697 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.364      ;
+; -5.694 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.361      ;
+; -5.685 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.352      ;
+; -5.685 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.352      ;
+; -5.685 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.352      ;
+; -5.677 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[13] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.344      ;
+; -5.672 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[18] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.339      ;
+; -5.670 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[20] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.337      ;
+; -5.668 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.335      ;
+; -5.668 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.335      ;
+; -5.656 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.323      ;
+; -5.656 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.323      ;
+; -5.648 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[16] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.315      ;
+; -5.629 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.296      ;
+; -5.629 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.296      ;
+; -5.614 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.281      ;
+; -5.612 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.279      ;
+; -5.602 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.269      ;
+; -5.602 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.269      ;
+; -5.589 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.256      ;
+; -5.589 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.256      ;
+; -5.567 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.234      ;
+; -5.567 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.234      ;
+; -5.562 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[12] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.229      ;
+; -5.461 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[15] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.128      ;
+; -5.459 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[9]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.126      ;
+; -5.456 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[17] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.123      ;
+; -5.456 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[16] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.123      ;
+; -5.456 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.123      ;
+; -5.456 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.123      ;
+; -5.444 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[13] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.111      ;
+; -5.444 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[12] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.111      ;
+; -5.438 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.105      ;
+; -5.434 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[7]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.101      ;
+; -5.434 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.101      ;
+; -5.430 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[13] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.097      ;
+; -5.394 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Shift_Register:u_regk|q[2]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.061      ;
+; -5.394 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Shift_Register:u_regk|q[1]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.061      ;
+; -5.394 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.061      ;
+; -5.394 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.061      ;
+; -5.367 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[11] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.034      ;
+; -5.367 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.034      ;
+; -5.367 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 1.000        ; 0.000      ; 6.034      ;
++--------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk_in'                                                                                                                                                                            ;
++--------+------------------------------------------+------------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock                        ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+; -1.617 ; Divisor_de_Frecuencia:u_div|clk_out      ; Divisor_de_Frecuencia:u_div|clk_out      ; Divisor_de_Frecuencia:u_div|clk_out ; clk_in      ; 0.000        ; 3.348      ; 2.328      ;
+; -1.117 ; Divisor_de_Frecuencia:u_div|clk_out      ; Divisor_de_Frecuencia:u_div|clk_out      ; Divisor_de_Frecuencia:u_div|clk_out ; clk_in      ; -0.500       ; 3.348      ; 2.328      ;
+; 2.749  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 2.970      ;
+; 2.845  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[3]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.066      ;
+; 2.853  ; Divisor_de_Frecuencia:u_div|contador[4]  ; Divisor_de_Frecuencia:u_div|contador[4]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.074      ;
+; 3.106  ; Divisor_de_Frecuencia:u_div|contador[5]  ; Divisor_de_Frecuencia:u_div|contador[5]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.327      ;
+; 3.114  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.335      ;
+; 3.262  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.483      ;
+; 3.526  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.747      ;
+; 3.527  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.748      ;
+; 3.534  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.755      ;
+; 3.535  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.756      ;
+; 3.536  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.757      ;
+; 3.576  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.797      ;
+; 3.652  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[6]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.873      ;
+; 3.662  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[4]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.883      ;
+; 3.680  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.901      ;
+; 3.684  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.905      ;
+; 3.689  ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[0]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.910      ;
+; 3.736  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.957      ;
+; 3.770  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[18] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 3.991      ;
+; 3.789  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.010      ;
+; 3.847  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.068      ;
+; 3.882  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.103      ;
+; 3.913  ; Divisor_de_Frecuencia:u_div|contador[4]  ; Divisor_de_Frecuencia:u_div|contador[5]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.134      ;
+; 3.914  ; Divisor_de_Frecuencia:u_div|contador[17] ; Divisor_de_Frecuencia:u_div|contador[17] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.135      ;
+; 3.918  ; Divisor_de_Frecuencia:u_div|contador[20] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.139      ;
+; 3.928  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.149      ;
+; 3.930  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.151      ;
+; 3.936  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.157      ;
+; 3.938  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.159      ;
+; 3.939  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[1]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.160      ;
+; 3.964  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.185      ;
+; 4.026  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[5]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.247      ;
+; 4.029  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.250      ;
+; 4.049  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.270      ;
+; 4.069  ; Divisor_de_Frecuencia:u_div|contador[5]  ; Divisor_de_Frecuencia:u_div|contador[6]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.290      ;
+; 4.072  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.293      ;
+; 4.073  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.294      ;
+; 4.078  ; Divisor_de_Frecuencia:u_div|contador[19] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.299      ;
+; 4.080  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.301      ;
+; 4.082  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.303      ;
+; 4.121  ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[2]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.342      ;
+; 4.149  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.370      ;
+; 4.151  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.372      ;
+; 4.155  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.376      ;
+; 4.156  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.377      ;
+; 4.180  ; Divisor_de_Frecuencia:u_div|contador[4]  ; Divisor_de_Frecuencia:u_div|contador[6]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.401      ;
+; 4.193  ; Divisor_de_Frecuencia:u_div|contador[16] ; Divisor_de_Frecuencia:u_div|contador[16] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.414      ;
+; 4.193  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.414      ;
+; 4.212  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.433      ;
+; 4.213  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.434      ;
+; 4.220  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.441      ;
+; 4.221  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.442      ;
+; 4.222  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.443      ;
+; 4.226  ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.447      ;
+; 4.265  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.486      ;
+; 4.286  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.507      ;
+; 4.287  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[14] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.508      ;
+; 4.287  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.508      ;
+; 4.293  ; Divisor_de_Frecuencia:u_div|contador[3]  ; Divisor_de_Frecuencia:u_div|contador[6]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.514      ;
+; 4.294  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.515      ;
+; 4.295  ; Divisor_de_Frecuencia:u_div|contador[15] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.516      ;
+; 4.295  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.516      ;
+; 4.296  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.517      ;
+; 4.298  ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[3]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.519      ;
+; 4.302  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[9]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.523      ;
+; 4.328  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[21] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.549      ;
+; 4.382  ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.603      ;
+; 4.419  ; Divisor_de_Frecuencia:u_div|contador[2]  ; Divisor_de_Frecuencia:u_div|contador[4]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.640      ;
+; 4.420  ; Divisor_de_Frecuencia:u_div|contador[22] ; Divisor_de_Frecuencia:u_div|contador[22] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.641      ;
+; 4.449  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[3]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.670      ;
+; 4.459  ; Divisor_de_Frecuencia:u_div|contador[6]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.680      ;
+; 4.459  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[4]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.680      ;
+; 4.469  ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.690      ;
+; 4.470  ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.691      ;
+; 4.477  ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.698      ;
+; 4.478  ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.699      ;
+; 4.479  ; Divisor_de_Frecuencia:u_div|contador[11] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.700      ;
+; 4.496  ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[3]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.717      ;
+; 4.506  ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[4]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.727      ;
+; 4.507  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.728      ;
+; 4.510  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.731      ;
+; 4.541  ; Divisor_de_Frecuencia:u_div|contador[17] ; Divisor_de_Frecuencia:u_div|contador[18] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.762      ;
+; 4.557  ; Divisor_de_Frecuencia:u_div|contador[4]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.778      ;
+; 4.575  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.796      ;
+; 4.587  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[20] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.808      ;
+; 4.588  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.809      ;
+; 4.595  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[7]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.816      ;
+; 4.595  ; Divisor_de_Frecuencia:u_div|contador[23] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.816      ;
+; 4.596  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.817      ;
+; 4.597  ; Divisor_de_Frecuencia:u_div|contador[21] ; Divisor_de_Frecuencia:u_div|contador[19] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.818      ;
+; 4.650  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.871      ;
+; 4.699  ; Divisor_de_Frecuencia:u_div|contador[5]  ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.920      ;
+; 4.712  ; Divisor_de_Frecuencia:u_div|contador[1]  ; Divisor_de_Frecuencia:u_div|contador[5]  ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.933      ;
+; 4.715  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|contador[15] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.936      ;
+; 4.724  ; Divisor_de_Frecuencia:u_div|contador[14] ; Divisor_de_Frecuencia:u_div|contador[10] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.945      ;
+; 4.735  ; Divisor_de_Frecuencia:u_div|contador[18] ; Divisor_de_Frecuencia:u_div|clk_out      ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.956      ;
+; 4.739  ; Divisor_de_Frecuencia:u_div|contador[0]  ; Divisor_de_Frecuencia:u_div|contador[23] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.960      ;
+; 4.743  ; Divisor_de_Frecuencia:u_div|contador[20] ; Divisor_de_Frecuencia:u_div|contador[12] ; clk_in                              ; clk_in      ; 0.000        ; 0.000      ; 4.964      ;
++--------+------------------------------------------+------------------------------------------+-------------------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'Divisor_de_Frecuencia:u_div|clk_out'                                                                                                                                                                                                           ;
++-------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; Slack ; From Node                                             ; To Node                                                          ; Launch Clock                        ; Latch Clock                         ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+; 1.651 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[6] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 1.872      ;
+; 1.987 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.208      ;
+; 1.997 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.218      ;
+; 2.064 ; Entrada_8bits:u_Inicio_Cod|salida_o[4]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.285      ;
+; 2.111 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[5] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[6]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.332      ;
+; 2.126 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.347      ;
+; 2.127 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.348      ;
+; 2.133 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.354      ;
+; 2.191 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Shift_Register:u_regk|q[1]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.412      ;
+; 2.225 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[2] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[3]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.446      ;
+; 2.239 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.460      ;
+; 2.242 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.463      ;
+; 2.297 ; Control_Antirebote:para_boton_start|start_req         ; Control_Antirebote:para_boton_start|start_req                    ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.518      ;
+; 2.299 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.520      ;
+; 2.308 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.529      ;
+; 2.315 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.536      ;
+; 2.317 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[5]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.538      ;
+; 2.319 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[3]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.540      ;
+; 2.319 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.540      ;
+; 2.327 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[6]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.548      ;
+; 2.328 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.549      ;
+; 2.551 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Shift_Register:u_regk|q[2]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.772      ;
+; 2.555 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Shift_Register:u_regk|q[1]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.776      ;
+; 2.573 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.794      ;
+; 2.579 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.800      ;
+; 2.620 ; Entrada_8bits:u_Inicio_Cod|salida_o[0]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.841      ;
+; 2.659 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Shift_Register:u_regk|q[2]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.880      ;
+; 2.732 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.953      ;
+; 2.744 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 2.965      ;
+; 2.802 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.023      ;
+; 2.841 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Shift_Register:u_regk|q[2]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.062      ;
+; 2.842 ; Entrada_8bits:u_Inicio_Cod|salida_o[5]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[5]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.063      ;
+; 2.844 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.065      ;
+; 2.851 ; Entrada_8bits:u_Inicio_Cod|salida_o[2]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[2]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.072      ;
+; 2.871 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.092      ;
+; 2.883 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.104      ;
+; 2.954 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.175      ;
+; 2.959 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[2]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.180      ;
+; 3.019 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.240      ;
+; 3.034 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[3]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.255      ;
+; 3.036 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.257      ;
+; 3.047 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[5]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.268      ;
+; 3.048 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[6]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.269      ;
+; 3.051 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.272      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[0]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[1]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[2]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[3]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[4]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[5]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[6]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.161 ; Entrada_8bits:u_Inicio_Cod|start_cod_d                ; Entrada_8bits:u_Inicio_Cod|salida_o[7]                           ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.382      ;
+; 3.163 ; Entrada_8bits:u_Inicio_Cod|salida_o[7]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.384      ;
+; 3.182 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[2]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.403      ;
+; 3.215 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Shift_Register:u_regk|q[1]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.436      ;
+; 3.225 ; Codificador:u_cod|Shift_Register:u_regk|q[2]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.446      ;
+; 3.241 ; Entrada_8bits:u_Inicio_Cod|salida_o[1]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.462      ;
+; 3.261 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Control_Cod:u_ctrl|par_valid_o                 ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.482      ;
+; 3.267 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.488      ;
+; 3.286 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[3] ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.507      ;
+; 3.289 ; Entrada_8bits:u_Inicio_Cod|salida_o[6]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[6]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.510      ;
+; 3.308 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Shift_Register:u_regk|q[2]                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.529      ;
+; 3.314 ; Entrada_8bits:u_Inicio_Cod|salida_o[3]                ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[3]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.535      ;
+; 3.339 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[5]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.560      ;
+; 3.341 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.562      ;
+; 3.346 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[2]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.567      ;
+; 3.353 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.574      ;
+; 3.384 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Control_Cod:u_ctrl|par_valid_o                 ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.605      ;
+; 3.421 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.642      ;
+; 3.448 ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7] ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.669      ;
+; 3.475 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.696      ;
+; 3.559 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.780      ;
+; 3.565 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]    ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.786      ;
+; 3.595 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[4]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.816      ;
+; 3.597 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[1]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.818      ;
+; 3.597 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.818      ;
+; 3.601 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.822      ;
+; 3.603 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.824      ;
+; 3.603 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.824      ;
+; 3.607 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.828      ;
+; 3.645 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.866      ;
+; 3.651 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.872      ;
+; 3.750 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.971      ;
+; 3.754 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[12] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 3.975      ;
+; 3.904 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.125      ;
+; 3.936 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[5]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.157      ;
+; 3.936 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.157      ;
+; 3.964 ; Control_Antirebote:para_boton_start|start_req         ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.185      ;
+; 3.964 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.185      ;
+; 3.968 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[2]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.189      ;
+; 3.974 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.195      ;
+; 4.106 ; Codificador:u_cod|Shift_Register:u_regk|q[1]          ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.327      ;
+; 4.123 ; Codificador:u_cod|Control_Cod:u_ctrl|transmitiendo    ; Codificador:u_cod|Control_Cod:u_ctrl|par_valid_o                 ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.344      ;
+; 4.125 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Control_Cod:u_ctrl|par_valid_o                 ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.346      ;
+; 4.130 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[3]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.351      ;
+; 4.177 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[0]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.398      ;
+; 4.177 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[1]               ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.398      ;
+; 4.203 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.424      ;
+; 4.207 ; Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]    ; Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[12] ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.428      ;
+; 4.218 ; Codificador:u_cod|Control_Cod:u_ctrl|listo_o          ; Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[0]            ; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 0.000        ; 0.000      ; 4.439      ;
++-------+-------------------------------------------------------+------------------------------------------------------------------+-------------------------------------+-------------------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                       ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; clk_in                              ; clk_in                              ; 732      ; 0        ; 0        ; 0        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; clk_in                              ; 1        ; 1        ; 0        ; 0        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 405      ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; clk_in                              ; clk_in                              ; 732      ; 0        ; 0        ; 0        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; clk_in                              ; 1        ; 1        ; 0        ; 0        ;
+; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; 405      ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 10    ; 10   ;
+; Unconstrained Input Port Paths  ; 90    ; 90   ;
+; Unconstrained Output Ports      ; 23    ; 23   ;
+; Unconstrained Output Port Paths ; 23    ; 23   ;
++---------------------------------+-------+------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                           ;
++-------------------------------------+-------------------------------------+------+-------------+
+; Target                              ; Clock                               ; Type ; Status      ;
++-------------------------------------+-------------------------------------+------+-------------+
+; Divisor_de_Frecuencia:u_div|clk_out ; Divisor_de_Frecuencia:u_div|clk_out ; Base ; Constrained ;
+; clk_in                              ; clk_in                              ; Base ; Constrained ;
++-------------------------------------+-------------------------------------+------+-------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; rst         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; start_cod   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                ;
++-------------------+---------------------------------------------------------------------------------------+
+; Output Port       ; Comment                                                                               ;
++-------------------+---------------------------------------------------------------------------------------+
+; led_clk_debug     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_listo_cod     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_par_valid     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[8]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[9]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[10] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[11] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[12] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[13] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[14] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[15] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[16] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[17] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[18] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[19] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------+---------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; rst         ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; start_cod   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[4] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[5] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[6] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switches[7] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                ;
++-------------------+---------------------------------------------------------------------------------------+
+; Output Port       ; Comment                                                                               ;
++-------------------+---------------------------------------------------------------------------------------+
+; led_clk_debug     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_listo_cod     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led_par_valid     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[8]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[9]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[10] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[11] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[12] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[13] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[14] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[15] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[16] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[17] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[18] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds_codigo20[19] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sat Nov 15 14:14:24 2025
+Info: Command: quartus_sta Codificador_Canal -c Codificador_Canal
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Codificador_Canal.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk_in clk_in
+    Info (332105): create_clock -period 1.000 -name Divisor_de_Frecuencia:u_div|clk_out Divisor_de_Frecuencia:u_div|clk_out
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -6.674
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.674            -142.505 clk_in 
+    Info (332119):    -6.535            -229.417 Divisor_de_Frecuencia:u_div|clk_out 
+Info (332146): Worst-case hold slack is -1.617
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.617              -1.617 clk_in 
+    Info (332119):     1.651               0.000 Divisor_de_Frecuencia:u_div|clk_out 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk_in 
+    Info (332119):     0.234               0.000 Divisor_de_Frecuencia:u_div|clk_out 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4683 megabytes
+    Info: Processing ended: Sat Nov 15 14:14:25 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

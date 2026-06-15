@@ -1,0 +1,411 @@
+Analysis & Synthesis report for Codificador_Canal
+Sat Nov 15 14:14:18 2025
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Divisor_de_Frecuencia:u_div
+ 12. Parameter Settings for User Entity Instance: Codificador:u_cod
+ 13. Parameter Settings for User Entity Instance: Codificador:u_cod|Control_Cod:u_ctrl
+ 14. Parameter Settings for User Entity Instance: Codificador:u_cod|Serializador_de_Entrada:u_msg
+ 15. Parameter Settings for User Entity Instance: Codificador:u_cod|Shift_Register:u_regk
+ 16. Parameter Settings for User Entity Instance: Codificador:u_cod|Paridad_Convolucional:u_par
+ 17. Parameter Settings for User Entity Instance: Codificador:u_cod|Acumulador_Cod:u_acum
+ 18. Port Connectivity Checks: "Codificador:u_cod"
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Nov 15 14:14:18 2025       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; Codificador_Canal                           ;
+; Top-level Entity Name       ; Top_Codificador                             ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 127                                         ;
+; Total pins                  ; 34                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; Top_Codificador    ; Codificador_Canal  ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
+; Top_Codificador.v                ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v         ;         ;
+; Entrada_8bits.v                  ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Entrada_8bits.v           ;         ;
+; Codificador.v                    ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v             ;         ;
+; Divisor_de_Frecuencia.v          ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Divisor_de_Frecuencia.v   ;         ;
+; Control_Antirrebote.v            ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Control_Antirrebote.v     ;         ;
+; Acumulador_Cod.v                 ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Acumulador_Cod.v          ;         ;
+; Control_Cod.v                    ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Control_Cod.v             ;         ;
+; Serializador_de_Entrada.v        ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Serializador_de_Entrada.v ;         ;
+; Shift_Register.v                 ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Shift_Register.v          ;         ;
+; Paridad_Convolucional.v          ; yes             ; User Verilog HDL File  ; C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Paridad_Convolucional.v   ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 127   ;
+;     -- Combinational with no register       ; 55    ;
+;     -- Register only                        ; 36    ;
+;     -- Combinational with a register        ; 36    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 48    ;
+;     -- 3 input functions                    ; 5     ;
+;     -- 2 input functions                    ; 37    ;
+;     -- 1 input functions                    ; 1     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 104   ;
+;     -- arithmetic mode                      ; 23    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 63    ;
+;                                             ;       ;
+; Total registers                             ; 72    ;
+; Total logic cells in carry chains           ; 24    ;
+; I/O pins                                    ; 34    ;
+; Maximum fan-out node                        ; rst   ;
+; Maximum fan-out                             ; 73    ;
+; Total fan-out                               ; 517   ;
+; Average fan-out                             ; 3.21  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node               ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                              ; Entity Name             ; Library Name ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-------------------------+--------------+
+; |Top_Codificador                         ; 127 (0)     ; 72           ; 0          ; 34   ; 0            ; 55 (0)       ; 36 (0)            ; 36 (0)           ; 24 (0)          ; 0 (0)      ; |Top_Codificador                                                 ; Top_Codificador         ; work         ;
+;    |Codificador:u_cod|                   ; 60 (0)      ; 37           ; 0          ; 0    ; 0            ; 23 (0)       ; 20 (0)            ; 17 (0)           ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Codificador:u_cod                               ; Codificador             ; work         ;
+;       |Acumulador_Cod:u_acum|            ; 35 (35)     ; 20           ; 0          ; 0    ; 0            ; 15 (15)      ; 20 (20)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum         ; Acumulador_Cod          ; work         ;
+;       |Control_Cod:u_ctrl|               ; 12 (12)     ; 7            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Codificador:u_cod|Control_Cod:u_ctrl            ; Control_Cod             ; work         ;
+;       |Serializador_de_Entrada:u_msg|    ; 11 (11)     ; 8            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 8 (8)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Codificador:u_cod|Serializador_de_Entrada:u_msg ; Serializador_de_Entrada ; work         ;
+;       |Shift_Register:u_regk|            ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Codificador:u_cod|Shift_Register:u_regk         ; Shift_Register          ; work         ;
+;    |Control_Antirebote:para_boton_start| ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Control_Antirebote:para_boton_start             ; Control_Antirebote      ; work         ;
+;    |Divisor_de_Frecuencia:u_div|         ; 56 (56)     ; 25           ; 0          ; 0    ; 0            ; 31 (31)      ; 16 (16)           ; 9 (9)            ; 24 (24)         ; 0 (0)      ; |Top_Codificador|Divisor_de_Frecuencia:u_div                     ; Divisor_de_Frecuencia   ; work         ;
+;    |Entrada_8bits:u_Inicio_Cod|          ; 10 (10)     ; 9            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 9 (9)            ; 0 (0)           ; 0 (0)      ; |Top_Codificador|Entrada_8bits:u_Inicio_Cod                      ; Entrada_8bits           ; work         ;
++------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                          ;
++-------------------------------------------------+-----------------------------------------------------------+
+; Register name                                   ; Reason for Removal                                        ;
++-------------------------------------------------+-----------------------------------------------------------+
+; Control_Antirebote:para_boton_start|iniciar_reg ; Merged with Control_Antirebote:para_boton_start|start_req ;
+; Total Number of Removed Registers = 1           ;                                                           ;
++-------------------------------------------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 72    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 63    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 41    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Control_Cod:u_ctrl|contador_o[3]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[2]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[4]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[6]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[8]  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[10] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[12] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[14] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[17] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[19] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Acumulador_Cod:u_acum|codigo_o_acumulado_o[21] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Control_Cod:u_ctrl|listo_o                     ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |Top_Codificador|Codificador:u_cod|Serializador_de_Entrada:u_msg|sr[7]            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Top_Codificador|Entrada_8bits:u_Inicio_Cod|salida_o[7]                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Divisor_de_Frecuencia:u_div ;
++----------------+----------+----------------------------------------------+
+; Parameter Name ; Value    ; Type                                         ;
++----------------+----------+----------------------------------------------+
+; DIV            ; 10000000 ; Signed Integer                               ;
++----------------+----------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod ;
++----------------+--------+--------------------------------------+
+; Parameter Name ; Value  ; Type                                 ;
++----------------+--------+--------------------------------------+
+; K              ; 3      ; Signed Integer                       ;
+; N              ; 8      ; Signed Integer                       ;
+; RESPUESTA      ; 111011 ; Unsigned Binary                      ;
+; GUARD_PAIRS    ; 1      ; Signed Integer                       ;
++----------------+--------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod|Control_Cod:u_ctrl ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; K              ; 3     ; Signed Integer                                           ;
+; N              ; 8     ; Signed Integer                                           ;
+; GUARD_PAIRS    ; 1     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod|Serializador_de_Entrada:u_msg ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod|Shift_Register:u_regk ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; K              ; 3     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod|Paridad_Convolucional:u_par ;
++----------------+--------+------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                             ;
++----------------+--------+------------------------------------------------------------------+
+; K              ; 3      ; Signed Integer                                                   ;
+; RESPUESTA      ; 111011 ; Unsigned Binary                                                  ;
++----------------+--------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Codificador:u_cod|Acumulador_Cod:u_acum ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; K              ; 3     ; Signed Integer                                              ;
+; N              ; 8     ; Signed Integer                                              ;
+; GUARD_PAIRS    ; 1     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Codificador:u_cod"                                                                                      ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                     ; Type   ; Severity ; Details                                                                             ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; codigo_o_acumulado[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; t1_o                     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; t2_o                     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sat Nov 15 14:14:11 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Codificador_Canal -c Codificador_Canal
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file top_codificador.v
+    Info (12023): Found entity 1: Top_Codificador File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file entrada_8bits.v
+    Info (12023): Found entity 1: Entrada_8bits File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Entrada_8bits.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file codificador.v
+    Info (12023): Found entity 1: Codificador File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_de_frecuencia.v
+    Info (12023): Found entity 1: Divisor_de_Frecuencia File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Divisor_de_Frecuencia.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file control_antirrebote.v
+    Info (12023): Found entity 1: Control_Antirebote File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Control_Antirrebote.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file acumulador_cod.v
+    Info (12023): Found entity 1: Acumulador_Cod File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Acumulador_Cod.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file control_cod.v
+    Info (12023): Found entity 1: Control_Cod File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Control_Cod.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file serializador_de_entrada.v
+    Info (12023): Found entity 1: Serializador_de_Entrada File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Serializador_de_Entrada.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file shift_register.v
+    Info (12023): Found entity 1: Shift_Register File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Shift_Register.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file paridad_convolucional.v
+    Info (12023): Found entity 1: Paridad_Convolucional File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Paridad_Convolucional.v Line: 4
+Info (12127): Elaborating entity "Top_Codificador" for the top level hierarchy
+Info (12128): Elaborating entity "Divisor_de_Frecuencia" for hierarchy "Divisor_de_Frecuencia:u_div" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v Line: 24
+Warning (10230): Verilog HDL assignment warning at Divisor_de_Frecuencia.v(38): truncated value with size 32 to match size of target (24) File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Divisor_de_Frecuencia.v Line: 38
+Info (12128): Elaborating entity "Entrada_8bits" for hierarchy "Entrada_8bits:u_Inicio_Cod" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v Line: 35
+Info (12128): Elaborating entity "Control_Antirebote" for hierarchy "Control_Antirebote:para_boton_start" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v Line: 44
+Info (12128): Elaborating entity "Codificador" for hierarchy "Codificador:u_cod" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Top_Codificador.v Line: 67
+Info (12128): Elaborating entity "Control_Cod" for hierarchy "Codificador:u_cod|Control_Cod:u_ctrl" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 49
+Info (12128): Elaborating entity "Serializador_de_Entrada" for hierarchy "Codificador:u_cod|Serializador_de_Entrada:u_msg" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 60
+Info (12128): Elaborating entity "Shift_Register" for hierarchy "Codificador:u_cod|Shift_Register:u_regk" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 69
+Info (12128): Elaborating entity "Paridad_Convolucional" for hierarchy "Codificador:u_cod|Paridad_Convolucional:u_par" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 75
+Info (12128): Elaborating entity "Acumulador_Cod" for hierarchy "Codificador:u_cod|Acumulador_Cod:u_acum" File: C:/Users/golyp/Downloads/Codificador_Canal/Codificador_Canal/Codificador.v Line: 89
+Info (21057): Implemented 161 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 23 output pins
+    Info (21061): Implemented 127 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Sat Nov 15 14:14:18 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:13
+
+

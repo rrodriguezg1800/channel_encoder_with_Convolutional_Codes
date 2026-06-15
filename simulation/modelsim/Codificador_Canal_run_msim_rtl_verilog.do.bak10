@@ -1,0 +1,35 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /Top_Codificador_vlg_tst/clk_in
+add wave -noupdate -color White /Top_Codificador_vlg_tst/led_clk_debug
+add wave -noupdate -color Gold /Top_Codificador_vlg_tst/switches
+add wave -noupdate /Top_Codificador_vlg_tst/rst
+add wave -noupdate -color Red /Top_Codificador_vlg_tst/start_cod
+add wave -noupdate -color Cyan /Top_Codificador_vlg_tst/led_par_valid
+add wave -noupdate -color Magenta /Top_Codificador_vlg_tst/led_listo_cod
+add wave -noupdate -color Orange /Top_Codificador_vlg_tst/leds_codigo20
+add wave -noupdate -color {Cornflower Blue} /Top_Codificador_vlg_tst/link_data_q
+add wave -noupdate -color {Green Yellow} /Top_Codificador_vlg_tst/seq_s1
+add wave -noupdate -color {Green Yellow} /Top_Codificador_vlg_tst/seq_s2
+add wave -noupdate -color Sienna /Top_Codificador_vlg_tst/seq_pairs_22
+add wave -noupdate -color Sienna /Top_Codificador_vlg_tst/link_data_raw
+add wave -noupdate -color Gray80 /Top_Codificador_vlg_tst/i
+add wave -noupdate -color Gray80 /Top_Codificador_vlg_tst/k
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {384851041 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 136
+configure wave -justifyvalue left
+configure wave -signalnamewidth 1
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {0 ps} {5830984 ps}

@@ -1,0 +1,1177 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do Codificador_Canal_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:21 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v 
+# -- Compiling module Top_Codificador
+# 
+# Top level modules:
+# 	Top_Codificador
+# End time: 11:37:21 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:21 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v 
+# -- Compiling module Entrada_8bits
+# 
+# Top level modules:
+# 	Entrada_8bits
+# End time: 11:37:21 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:21 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v 
+# -- Compiling module Codificador
+# 
+# Top level modules:
+# 	Codificador
+# End time: 11:37:21 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:21 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v 
+# -- Compiling module Divisor_de_Frecuencia
+# 
+# Top level modules:
+# 	Divisor_de_Frecuencia
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v 
+# -- Compiling module Control_Antirebote
+# 
+# Top level modules:
+# 	Control_Antirebote
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v 
+# -- Compiling module Acumulador_Cod
+# 
+# Top level modules:
+# 	Acumulador_Cod
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v 
+# -- Compiling module Control_Cod
+# 
+# Top level modules:
+# 	Control_Cod
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v 
+# -- Compiling module Serializador_de_Entrada
+# 
+# Top level modules:
+# 	Serializador_de_Entrada
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v 
+# -- Compiling module Shift_Register
+# 
+# Top level modules:
+# 	Shift_Register
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v 
+# -- Compiling module Paridad_Convolucional
+# 
+# Top level modules:
+# 	Paridad_Convolucional
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim {C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:37:22 on Jun 15,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim" C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt 
+# -- Compiling module Top_Codificador_vlg_tst
+# 
+# Top level modules:
+# 	Top_Codificador_vlg_tst
+# End time: 11:37:22 on Jun 15,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs="+acc"  Top_Codificador_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxii_ver -L rtl_work -L work -voptargs=""+acc"" Top_Codificador_vlg_tst 
+# Start time: 11:37:22 on Jun 15,2026
+# Loading work.Top_Codificador_vlg_tst
+# Loading work.Top_Codificador
+# Loading work.Divisor_de_Frecuencia
+# Loading work.Entrada_8bits
+# Loading work.Control_Antirebote
+# Loading work.Codificador
+# Loading work.Control_Cod
+# Loading work.Serializador_de_Entrada
+# Loading work.Shift_Register
+# Loading work.Paridad_Convolucional
+# Loading work.Acumulador_Cod
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# [PASS] palabra=00000000  leds=00000000000000000000  esperado=00000000000000000000  valid_pulses=11  @t=3315000
+#   S1 (G1, 11b)       = 00000000000
+#   S2 (G2, 11b)       = 00000000000
+#   PARES (22b tiempo) = 0000000000000000000000
+# [PASS] palabra=00000001  leds=00000000000000111011  esperado=00000000000000111011  valid_pulses=11  @t=6195000
+#   S1 (G1, 11b)       = 00000001110
+#   S2 (G2, 11b)       = 00000001010
+#   PARES (22b tiempo) = 0000000000000011101100
+# [PASS] palabra=00000010  leds=00000000000011101100  esperado=00000000000011101100  valid_pulses=11  @t=9075000
+#   S1 (G1, 11b)       = 00000011100
+#   S2 (G2, 11b)       = 00000010100
+#   PARES (22b tiempo) = 0000000000001110110000
+# [PASS] palabra=00000011  leds=00000000000011010111  esperado=00000000000011010111  valid_pulses=11  @t=11955000
+#   S1 (G1, 11b)       = 00000010010
+#   S2 (G2, 11b)       = 00000011110
+#   PARES (22b tiempo) = 0000000000001101011100
+# [PASS] palabra=00000100  leds=00000000001110110000  esperado=00000000001110110000  valid_pulses=11  @t=14835000
+#   S1 (G1, 11b)       = 00000111000
+#   S2 (G2, 11b)       = 00000101000
+#   PARES (22b tiempo) = 0000000000111011000000
+# [PASS] palabra=00000101  leds=00000000001110001011  esperado=00000000001110001011  valid_pulses=11  @t=17715000
+#   S1 (G1, 11b)       = 00000110110
+#   S2 (G2, 11b)       = 00000100010
+#   PARES (22b tiempo) = 0000000000111000101100
+# [PASS] palabra=00000110  leds=00000000001101011100  esperado=00000000001101011100  valid_pulses=11  @t=20595000
+#   S1 (G1, 11b)       = 00000100100
+#   S2 (G2, 11b)       = 00000111100
+#   PARES (22b tiempo) = 0000000000110101110000
+# [PASS] palabra=00000111  leds=00000000001101100111  esperado=00000000001101100111  valid_pulses=11  @t=23475000
+#   S1 (G1, 11b)       = 00000101010
+#   S2 (G2, 11b)       = 00000110110
+#   PARES (22b tiempo) = 0000000000110110011100
+# [PASS] palabra=00001000  leds=00000000111011000000  esperado=00000000111011000000  valid_pulses=11  @t=26355000
+#   S1 (G1, 11b)       = 00001110000
+#   S2 (G2, 11b)       = 00001010000
+#   PARES (22b tiempo) = 0000000011101100000000
+# [PASS] palabra=00001001  leds=00000000111011111011  esperado=00000000111011111011  valid_pulses=11  @t=29235000
+#   S1 (G1, 11b)       = 00001111110
+#   S2 (G2, 11b)       = 00001011010
+#   PARES (22b tiempo) = 0000000011101111101100
+# [PASS] palabra=00001010  leds=00000000111000101100  esperado=00000000111000101100  valid_pulses=11  @t=32115000
+#   S1 (G1, 11b)       = 00001101100
+#   S2 (G2, 11b)       = 00001000100
+#   PARES (22b tiempo) = 0000000011100010110000
+# [PASS] palabra=00001011  leds=00000000111000010111  esperado=00000000111000010111  valid_pulses=11  @t=34995000
+#   S1 (G1, 11b)       = 00001100010
+#   S2 (G2, 11b)       = 00001001110
+#   PARES (22b tiempo) = 0000000011100001011100
+# [PASS] palabra=00001100  leds=00000000110101110000  esperado=00000000110101110000  valid_pulses=11  @t=37875000
+#   S1 (G1, 11b)       = 00001001000
+#   S2 (G2, 11b)       = 00001111000
+#   PARES (22b tiempo) = 0000000011010111000000
+# [PASS] palabra=00001101  leds=00000000110101001011  esperado=00000000110101001011  valid_pulses=11  @t=40755000
+#   S1 (G1, 11b)       = 00001000110
+#   S2 (G2, 11b)       = 00001110010
+#   PARES (22b tiempo) = 0000000011010100101100
+# [PASS] palabra=00001110  leds=00000000110110011100  esperado=00000000110110011100  valid_pulses=11  @t=43635000
+#   S1 (G1, 11b)       = 00001010100
+#   S2 (G2, 11b)       = 00001101100
+#   PARES (22b tiempo) = 0000000011011001110000
+# [PASS] palabra=00001111  leds=00000000110110100111  esperado=00000000110110100111  valid_pulses=11  @t=46515000
+#   S1 (G1, 11b)       = 00001011010
+#   S2 (G2, 11b)       = 00001100110
+#   PARES (22b tiempo) = 0000000011011010011100
+# [PASS] palabra=00010000  leds=00000011101100000000  esperado=00000011101100000000  valid_pulses=11  @t=49395000
+#   S1 (G1, 11b)       = 00011100000
+#   S2 (G2, 11b)       = 00010100000
+#   PARES (22b tiempo) = 0000001110110000000000
+# [PASS] palabra=00010001  leds=00000011101100111011  esperado=00000011101100111011  valid_pulses=11  @t=52275000
+#   S1 (G1, 11b)       = 00011101110
+#   S2 (G2, 11b)       = 00010101010
+#   PARES (22b tiempo) = 0000001110110011101100
+# [PASS] palabra=00010010  leds=00000011101111101100  esperado=00000011101111101100  valid_pulses=11  @t=55155000
+#   S1 (G1, 11b)       = 00011111100
+#   S2 (G2, 11b)       = 00010110100
+#   PARES (22b tiempo) = 0000001110111110110000
+# [PASS] palabra=00010011  leds=00000011101111010111  esperado=00000011101111010111  valid_pulses=11  @t=58035000
+#   S1 (G1, 11b)       = 00011110010
+#   S2 (G2, 11b)       = 00010111110
+#   PARES (22b tiempo) = 0000001110111101011100
+# [PASS] palabra=00010100  leds=00000011100010110000  esperado=00000011100010110000  valid_pulses=11  @t=60915000
+#   S1 (G1, 11b)       = 00011011000
+#   S2 (G2, 11b)       = 00010001000
+#   PARES (22b tiempo) = 0000001110001011000000
+# [PASS] palabra=00010101  leds=00000011100010001011  esperado=00000011100010001011  valid_pulses=11  @t=63795000
+#   S1 (G1, 11b)       = 00011010110
+#   S2 (G2, 11b)       = 00010000010
+#   PARES (22b tiempo) = 0000001110001000101100
+# [PASS] palabra=00010110  leds=00000011100001011100  esperado=00000011100001011100  valid_pulses=11  @t=66675000
+#   S1 (G1, 11b)       = 00011000100
+#   S2 (G2, 11b)       = 00010011100
+#   PARES (22b tiempo) = 0000001110000101110000
+# [PASS] palabra=00010111  leds=00000011100001100111  esperado=00000011100001100111  valid_pulses=11  @t=69555000
+#   S1 (G1, 11b)       = 00011001010
+#   S2 (G2, 11b)       = 00010010110
+#   PARES (22b tiempo) = 0000001110000110011100
+# [PASS] palabra=00011000  leds=00000011010111000000  esperado=00000011010111000000  valid_pulses=11  @t=72435000
+#   S1 (G1, 11b)       = 00010010000
+#   S2 (G2, 11b)       = 00011110000
+#   PARES (22b tiempo) = 0000001101011100000000
+# [PASS] palabra=00011001  leds=00000011010111111011  esperado=00000011010111111011  valid_pulses=11  @t=75315000
+#   S1 (G1, 11b)       = 00010011110
+#   S2 (G2, 11b)       = 00011111010
+#   PARES (22b tiempo) = 0000001101011111101100
+# [PASS] palabra=00011010  leds=00000011010100101100  esperado=00000011010100101100  valid_pulses=11  @t=78195000
+#   S1 (G1, 11b)       = 00010001100
+#   S2 (G2, 11b)       = 00011100100
+#   PARES (22b tiempo) = 0000001101010010110000
+# [PASS] palabra=00011011  leds=00000011010100010111  esperado=00000011010100010111  valid_pulses=11  @t=81075000
+#   S1 (G1, 11b)       = 00010000010
+#   S2 (G2, 11b)       = 00011101110
+#   PARES (22b tiempo) = 0000001101010001011100
+# [PASS] palabra=00011100  leds=00000011011001110000  esperado=00000011011001110000  valid_pulses=11  @t=83955000
+#   S1 (G1, 11b)       = 00010101000
+#   S2 (G2, 11b)       = 00011011000
+#   PARES (22b tiempo) = 0000001101100111000000
+# [PASS] palabra=00011101  leds=00000011011001001011  esperado=00000011011001001011  valid_pulses=11  @t=86835000
+#   S1 (G1, 11b)       = 00010100110
+#   S2 (G2, 11b)       = 00011010010
+#   PARES (22b tiempo) = 0000001101100100101100
+# [PASS] palabra=00011110  leds=00000011011010011100  esperado=00000011011010011100  valid_pulses=11  @t=89715000
+#   S1 (G1, 11b)       = 00010110100
+#   S2 (G2, 11b)       = 00011001100
+#   PARES (22b tiempo) = 0000001101101001110000
+# [PASS] palabra=00011111  leds=00000011011010100111  esperado=00000011011010100111  valid_pulses=11  @t=92595000
+#   S1 (G1, 11b)       = 00010111010
+#   S2 (G2, 11b)       = 00011000110
+#   PARES (22b tiempo) = 0000001101101010011100
+# [PASS] palabra=00100000  leds=00001110110000000000  esperado=00001110110000000000  valid_pulses=11  @t=95475000
+#   S1 (G1, 11b)       = 00111000000
+#   S2 (G2, 11b)       = 00101000000
+#   PARES (22b tiempo) = 0000111011000000000000
+# [PASS] palabra=00100001  leds=00001110110000111011  esperado=00001110110000111011  valid_pulses=11  @t=98355000
+#   S1 (G1, 11b)       = 00111001110
+#   S2 (G2, 11b)       = 00101001010
+#   PARES (22b tiempo) = 0000111011000011101100
+# [PASS] palabra=00100010  leds=00001110110011101100  esperado=00001110110011101100  valid_pulses=11  @t=101235000
+#   S1 (G1, 11b)       = 00111011100
+#   S2 (G2, 11b)       = 00101010100
+#   PARES (22b tiempo) = 0000111011001110110000
+# [PASS] palabra=00100011  leds=00001110110011010111  esperado=00001110110011010111  valid_pulses=11  @t=104115000
+#   S1 (G1, 11b)       = 00111010010
+#   S2 (G2, 11b)       = 00101011110
+#   PARES (22b tiempo) = 0000111011001101011100
+# [PASS] palabra=00100100  leds=00001110111110110000  esperado=00001110111110110000  valid_pulses=11  @t=106995000
+#   S1 (G1, 11b)       = 00111111000
+#   S2 (G2, 11b)       = 00101101000
+#   PARES (22b tiempo) = 0000111011111011000000
+# [PASS] palabra=00100101  leds=00001110111110001011  esperado=00001110111110001011  valid_pulses=11  @t=109875000
+#   S1 (G1, 11b)       = 00111110110
+#   S2 (G2, 11b)       = 00101100010
+#   PARES (22b tiempo) = 0000111011111000101100
+# [PASS] palabra=00100110  leds=00001110111101011100  esperado=00001110111101011100  valid_pulses=11  @t=112755000
+#   S1 (G1, 11b)       = 00111100100
+#   S2 (G2, 11b)       = 00101111100
+#   PARES (22b tiempo) = 0000111011110101110000
+# [PASS] palabra=00100111  leds=00001110111101100111  esperado=00001110111101100111  valid_pulses=11  @t=115635000
+#   S1 (G1, 11b)       = 00111101010
+#   S2 (G2, 11b)       = 00101110110
+#   PARES (22b tiempo) = 0000111011110110011100
+# [PASS] palabra=00101000  leds=00001110001011000000  esperado=00001110001011000000  valid_pulses=11  @t=118515000
+#   S1 (G1, 11b)       = 00110110000
+#   S2 (G2, 11b)       = 00100010000
+#   PARES (22b tiempo) = 0000111000101100000000
+# [PASS] palabra=00101001  leds=00001110001011111011  esperado=00001110001011111011  valid_pulses=11  @t=121395000
+#   S1 (G1, 11b)       = 00110111110
+#   S2 (G2, 11b)       = 00100011010
+#   PARES (22b tiempo) = 0000111000101111101100
+# [PASS] palabra=00101010  leds=00001110001000101100  esperado=00001110001000101100  valid_pulses=11  @t=124275000
+#   S1 (G1, 11b)       = 00110101100
+#   S2 (G2, 11b)       = 00100000100
+#   PARES (22b tiempo) = 0000111000100010110000
+# [PASS] palabra=00101011  leds=00001110001000010111  esperado=00001110001000010111  valid_pulses=11  @t=127155000
+#   S1 (G1, 11b)       = 00110100010
+#   S2 (G2, 11b)       = 00100001110
+#   PARES (22b tiempo) = 0000111000100001011100
+# [PASS] palabra=00101100  leds=00001110000101110000  esperado=00001110000101110000  valid_pulses=11  @t=130035000
+#   S1 (G1, 11b)       = 00110001000
+#   S2 (G2, 11b)       = 00100111000
+#   PARES (22b tiempo) = 0000111000010111000000
+# [PASS] palabra=00101101  leds=00001110000101001011  esperado=00001110000101001011  valid_pulses=11  @t=132915000
+#   S1 (G1, 11b)       = 00110000110
+#   S2 (G2, 11b)       = 00100110010
+#   PARES (22b tiempo) = 0000111000010100101100
+# [PASS] palabra=00101110  leds=00001110000110011100  esperado=00001110000110011100  valid_pulses=11  @t=135795000
+#   S1 (G1, 11b)       = 00110010100
+#   S2 (G2, 11b)       = 00100101100
+#   PARES (22b tiempo) = 0000111000011001110000
+# [PASS] palabra=00101111  leds=00001110000110100111  esperado=00001110000110100111  valid_pulses=11  @t=138675000
+#   S1 (G1, 11b)       = 00110011010
+#   S2 (G2, 11b)       = 00100100110
+#   PARES (22b tiempo) = 0000111000011010011100
+# [PASS] palabra=00110000  leds=00001101011100000000  esperado=00001101011100000000  valid_pulses=11  @t=141555000
+#   S1 (G1, 11b)       = 00100100000
+#   S2 (G2, 11b)       = 00111100000
+#   PARES (22b tiempo) = 0000110101110000000000
+# [PASS] palabra=00110001  leds=00001101011100111011  esperado=00001101011100111011  valid_pulses=11  @t=144435000
+#   S1 (G1, 11b)       = 00100101110
+#   S2 (G2, 11b)       = 00111101010
+#   PARES (22b tiempo) = 0000110101110011101100
+# [PASS] palabra=00110010  leds=00001101011111101100  esperado=00001101011111101100  valid_pulses=11  @t=147315000
+#   S1 (G1, 11b)       = 00100111100
+#   S2 (G2, 11b)       = 00111110100
+#   PARES (22b tiempo) = 0000110101111110110000
+# [PASS] palabra=00110011  leds=00001101011111010111  esperado=00001101011111010111  valid_pulses=11  @t=150195000
+#   S1 (G1, 11b)       = 00100110010
+#   S2 (G2, 11b)       = 00111111110
+#   PARES (22b tiempo) = 0000110101111101011100
+# [PASS] palabra=00110100  leds=00001101010010110000  esperado=00001101010010110000  valid_pulses=11  @t=153075000
+#   S1 (G1, 11b)       = 00100011000
+#   S2 (G2, 11b)       = 00111001000
+#   PARES (22b tiempo) = 0000110101001011000000
+# [PASS] palabra=00110101  leds=00001101010010001011  esperado=00001101010010001011  valid_pulses=11  @t=155955000
+#   S1 (G1, 11b)       = 00100010110
+#   S2 (G2, 11b)       = 00111000010
+#   PARES (22b tiempo) = 0000110101001000101100
+# [PASS] palabra=00110110  leds=00001101010001011100  esperado=00001101010001011100  valid_pulses=11  @t=158835000
+#   S1 (G1, 11b)       = 00100000100
+#   S2 (G2, 11b)       = 00111011100
+#   PARES (22b tiempo) = 0000110101000101110000
+# [PASS] palabra=00110111  leds=00001101010001100111  esperado=00001101010001100111  valid_pulses=11  @t=161715000
+#   S1 (G1, 11b)       = 00100001010
+#   S2 (G2, 11b)       = 00111010110
+#   PARES (22b tiempo) = 0000110101000110011100
+# [PASS] palabra=00111000  leds=00001101100111000000  esperado=00001101100111000000  valid_pulses=11  @t=164595000
+#   S1 (G1, 11b)       = 00101010000
+#   S2 (G2, 11b)       = 00110110000
+#   PARES (22b tiempo) = 0000110110011100000000
+# [PASS] palabra=00111001  leds=00001101100111111011  esperado=00001101100111111011  valid_pulses=11  @t=167475000
+#   S1 (G1, 11b)       = 00101011110
+#   S2 (G2, 11b)       = 00110111010
+#   PARES (22b tiempo) = 0000110110011111101100
+# [PASS] palabra=00111010  leds=00001101100100101100  esperado=00001101100100101100  valid_pulses=11  @t=170355000
+#   S1 (G1, 11b)       = 00101001100
+#   S2 (G2, 11b)       = 00110100100
+#   PARES (22b tiempo) = 0000110110010010110000
+# [PASS] palabra=00111011  leds=00001101100100010111  esperado=00001101100100010111  valid_pulses=11  @t=173235000
+#   S1 (G1, 11b)       = 00101000010
+#   S2 (G2, 11b)       = 00110101110
+#   PARES (22b tiempo) = 0000110110010001011100
+# [PASS] palabra=00111100  leds=00001101101001110000  esperado=00001101101001110000  valid_pulses=11  @t=176115000
+#   S1 (G1, 11b)       = 00101101000
+#   S2 (G2, 11b)       = 00110011000
+#   PARES (22b tiempo) = 0000110110100111000000
+# [PASS] palabra=00111101  leds=00001101101001001011  esperado=00001101101001001011  valid_pulses=11  @t=178995000
+#   S1 (G1, 11b)       = 00101100110
+#   S2 (G2, 11b)       = 00110010010
+#   PARES (22b tiempo) = 0000110110100100101100
+# [PASS] palabra=00111110  leds=00001101101010011100  esperado=00001101101010011100  valid_pulses=11  @t=181875000
+#   S1 (G1, 11b)       = 00101110100
+#   S2 (G2, 11b)       = 00110001100
+#   PARES (22b tiempo) = 0000110110101001110000
+# [PASS] palabra=00111111  leds=00001101101010100111  esperado=00001101101010100111  valid_pulses=11  @t=184755000
+#   S1 (G1, 11b)       = 00101111010
+#   S2 (G2, 11b)       = 00110000110
+#   PARES (22b tiempo) = 0000110110101010011100
+# [PASS] palabra=01000000  leds=00111011000000000000  esperado=00111011000000000000  valid_pulses=11  @t=187635000
+#   S1 (G1, 11b)       = 01110000000
+#   S2 (G2, 11b)       = 01010000000
+#   PARES (22b tiempo) = 0011101100000000000000
+# [PASS] palabra=01000001  leds=00111011000000111011  esperado=00111011000000111011  valid_pulses=11  @t=190515000
+#   S1 (G1, 11b)       = 01110001110
+#   S2 (G2, 11b)       = 01010001010
+#   PARES (22b tiempo) = 0011101100000011101100
+# [PASS] palabra=01000010  leds=00111011000011101100  esperado=00111011000011101100  valid_pulses=11  @t=193395000
+#   S1 (G1, 11b)       = 01110011100
+#   S2 (G2, 11b)       = 01010010100
+#   PARES (22b tiempo) = 0011101100001110110000
+# [PASS] palabra=01000011  leds=00111011000011010111  esperado=00111011000011010111  valid_pulses=11  @t=196275000
+#   S1 (G1, 11b)       = 01110010010
+#   S2 (G2, 11b)       = 01010011110
+#   PARES (22b tiempo) = 0011101100001101011100
+# [PASS] palabra=01000100  leds=00111011001110110000  esperado=00111011001110110000  valid_pulses=11  @t=199155000
+#   S1 (G1, 11b)       = 01110111000
+#   S2 (G2, 11b)       = 01010101000
+#   PARES (22b tiempo) = 0011101100111011000000
+# [PASS] palabra=01000101  leds=00111011001110001011  esperado=00111011001110001011  valid_pulses=11  @t=202035000
+#   S1 (G1, 11b)       = 01110110110
+#   S2 (G2, 11b)       = 01010100010
+#   PARES (22b tiempo) = 0011101100111000101100
+# [PASS] palabra=01000110  leds=00111011001101011100  esperado=00111011001101011100  valid_pulses=11  @t=204915000
+#   S1 (G1, 11b)       = 01110100100
+#   S2 (G2, 11b)       = 01010111100
+#   PARES (22b tiempo) = 0011101100110101110000
+# [PASS] palabra=01000111  leds=00111011001101100111  esperado=00111011001101100111  valid_pulses=11  @t=207795000
+#   S1 (G1, 11b)       = 01110101010
+#   S2 (G2, 11b)       = 01010110110
+#   PARES (22b tiempo) = 0011101100110110011100
+# [PASS] palabra=01001000  leds=00111011111011000000  esperado=00111011111011000000  valid_pulses=11  @t=210675000
+#   S1 (G1, 11b)       = 01111110000
+#   S2 (G2, 11b)       = 01011010000
+#   PARES (22b tiempo) = 0011101111101100000000
+# [PASS] palabra=01001001  leds=00111011111011111011  esperado=00111011111011111011  valid_pulses=11  @t=213555000
+#   S1 (G1, 11b)       = 01111111110
+#   S2 (G2, 11b)       = 01011011010
+#   PARES (22b tiempo) = 0011101111101111101100
+# [PASS] palabra=01001010  leds=00111011111000101100  esperado=00111011111000101100  valid_pulses=11  @t=216435000
+#   S1 (G1, 11b)       = 01111101100
+#   S2 (G2, 11b)       = 01011000100
+#   PARES (22b tiempo) = 0011101111100010110000
+# [PASS] palabra=01001011  leds=00111011111000010111  esperado=00111011111000010111  valid_pulses=11  @t=219315000
+#   S1 (G1, 11b)       = 01111100010
+#   S2 (G2, 11b)       = 01011001110
+#   PARES (22b tiempo) = 0011101111100001011100
+# [PASS] palabra=01001100  leds=00111011110101110000  esperado=00111011110101110000  valid_pulses=11  @t=222195000
+#   S1 (G1, 11b)       = 01111001000
+#   S2 (G2, 11b)       = 01011111000
+#   PARES (22b tiempo) = 0011101111010111000000
+# [PASS] palabra=01001101  leds=00111011110101001011  esperado=00111011110101001011  valid_pulses=11  @t=225075000
+#   S1 (G1, 11b)       = 01111000110
+#   S2 (G2, 11b)       = 01011110010
+#   PARES (22b tiempo) = 0011101111010100101100
+# [PASS] palabra=01001110  leds=00111011110110011100  esperado=00111011110110011100  valid_pulses=11  @t=227955000
+#   S1 (G1, 11b)       = 01111010100
+#   S2 (G2, 11b)       = 01011101100
+#   PARES (22b tiempo) = 0011101111011001110000
+# [PASS] palabra=01001111  leds=00111011110110100111  esperado=00111011110110100111  valid_pulses=11  @t=230835000
+#   S1 (G1, 11b)       = 01111011010
+#   S2 (G2, 11b)       = 01011100110
+#   PARES (22b tiempo) = 0011101111011010011100
+# [PASS] palabra=01010000  leds=00111000101100000000  esperado=00111000101100000000  valid_pulses=11  @t=233715000
+#   S1 (G1, 11b)       = 01101100000
+#   S2 (G2, 11b)       = 01000100000
+#   PARES (22b tiempo) = 0011100010110000000000
+# [PASS] palabra=01010001  leds=00111000101100111011  esperado=00111000101100111011  valid_pulses=11  @t=236595000
+#   S1 (G1, 11b)       = 01101101110
+#   S2 (G2, 11b)       = 01000101010
+#   PARES (22b tiempo) = 0011100010110011101100
+# [PASS] palabra=01010010  leds=00111000101111101100  esperado=00111000101111101100  valid_pulses=11  @t=239475000
+#   S1 (G1, 11b)       = 01101111100
+#   S2 (G2, 11b)       = 01000110100
+#   PARES (22b tiempo) = 0011100010111110110000
+# [PASS] palabra=01010011  leds=00111000101111010111  esperado=00111000101111010111  valid_pulses=11  @t=242355000
+#   S1 (G1, 11b)       = 01101110010
+#   S2 (G2, 11b)       = 01000111110
+#   PARES (22b tiempo) = 0011100010111101011100
+# [PASS] palabra=01010100  leds=00111000100010110000  esperado=00111000100010110000  valid_pulses=11  @t=245235000
+#   S1 (G1, 11b)       = 01101011000
+#   S2 (G2, 11b)       = 01000001000
+#   PARES (22b tiempo) = 0011100010001011000000
+# [PASS] palabra=01010101  leds=00111000100010001011  esperado=00111000100010001011  valid_pulses=11  @t=248115000
+#   S1 (G1, 11b)       = 01101010110
+#   S2 (G2, 11b)       = 01000000010
+#   PARES (22b tiempo) = 0011100010001000101100
+# [PASS] palabra=01010110  leds=00111000100001011100  esperado=00111000100001011100  valid_pulses=11  @t=250995000
+#   S1 (G1, 11b)       = 01101000100
+#   S2 (G2, 11b)       = 01000011100
+#   PARES (22b tiempo) = 0011100010000101110000
+# [PASS] palabra=01010111  leds=00111000100001100111  esperado=00111000100001100111  valid_pulses=11  @t=253875000
+#   S1 (G1, 11b)       = 01101001010
+#   S2 (G2, 11b)       = 01000010110
+#   PARES (22b tiempo) = 0011100010000110011100
+# [PASS] palabra=01011000  leds=00111000010111000000  esperado=00111000010111000000  valid_pulses=11  @t=256755000
+#   S1 (G1, 11b)       = 01100010000
+#   S2 (G2, 11b)       = 01001110000
+#   PARES (22b tiempo) = 0011100001011100000000
+# [PASS] palabra=01011001  leds=00111000010111111011  esperado=00111000010111111011  valid_pulses=11  @t=259635000
+#   S1 (G1, 11b)       = 01100011110
+#   S2 (G2, 11b)       = 01001111010
+#   PARES (22b tiempo) = 0011100001011111101100
+# [PASS] palabra=01011010  leds=00111000010100101100  esperado=00111000010100101100  valid_pulses=11  @t=262515000
+#   S1 (G1, 11b)       = 01100001100
+#   S2 (G2, 11b)       = 01001100100
+#   PARES (22b tiempo) = 0011100001010010110000
+# [PASS] palabra=01011011  leds=00111000010100010111  esperado=00111000010100010111  valid_pulses=11  @t=265395000
+#   S1 (G1, 11b)       = 01100000010
+#   S2 (G2, 11b)       = 01001101110
+#   PARES (22b tiempo) = 0011100001010001011100
+# [PASS] palabra=01011100  leds=00111000011001110000  esperado=00111000011001110000  valid_pulses=11  @t=268275000
+#   S1 (G1, 11b)       = 01100101000
+#   S2 (G2, 11b)       = 01001011000
+#   PARES (22b tiempo) = 0011100001100111000000
+# [PASS] palabra=01011101  leds=00111000011001001011  esperado=00111000011001001011  valid_pulses=11  @t=271155000
+#   S1 (G1, 11b)       = 01100100110
+#   S2 (G2, 11b)       = 01001010010
+#   PARES (22b tiempo) = 0011100001100100101100
+# [PASS] palabra=01011110  leds=00111000011010011100  esperado=00111000011010011100  valid_pulses=11  @t=274035000
+#   S1 (G1, 11b)       = 01100110100
+#   S2 (G2, 11b)       = 01001001100
+#   PARES (22b tiempo) = 0011100001101001110000
+# [PASS] palabra=01011111  leds=00111000011010100111  esperado=00111000011010100111  valid_pulses=11  @t=276915000
+#   S1 (G1, 11b)       = 01100111010
+#   S2 (G2, 11b)       = 01001000110
+#   PARES (22b tiempo) = 0011100001101010011100
+# [PASS] palabra=01100000  leds=00110101110000000000  esperado=00110101110000000000  valid_pulses=11  @t=279795000
+#   S1 (G1, 11b)       = 01001000000
+#   S2 (G2, 11b)       = 01111000000
+#   PARES (22b tiempo) = 0011010111000000000000
+# [PASS] palabra=01100001  leds=00110101110000111011  esperado=00110101110000111011  valid_pulses=11  @t=282675000
+#   S1 (G1, 11b)       = 01001001110
+#   S2 (G2, 11b)       = 01111001010
+#   PARES (22b tiempo) = 0011010111000011101100
+# [PASS] palabra=01100010  leds=00110101110011101100  esperado=00110101110011101100  valid_pulses=11  @t=285555000
+#   S1 (G1, 11b)       = 01001011100
+#   S2 (G2, 11b)       = 01111010100
+#   PARES (22b tiempo) = 0011010111001110110000
+# [PASS] palabra=01100011  leds=00110101110011010111  esperado=00110101110011010111  valid_pulses=11  @t=288435000
+#   S1 (G1, 11b)       = 01001010010
+#   S2 (G2, 11b)       = 01111011110
+#   PARES (22b tiempo) = 0011010111001101011100
+# [PASS] palabra=01100100  leds=00110101111110110000  esperado=00110101111110110000  valid_pulses=11  @t=291315000
+#   S1 (G1, 11b)       = 01001111000
+#   S2 (G2, 11b)       = 01111101000
+#   PARES (22b tiempo) = 0011010111111011000000
+# [PASS] palabra=01100101  leds=00110101111110001011  esperado=00110101111110001011  valid_pulses=11  @t=294195000
+#   S1 (G1, 11b)       = 01001110110
+#   S2 (G2, 11b)       = 01111100010
+#   PARES (22b tiempo) = 0011010111111000101100
+# [PASS] palabra=01100110  leds=00110101111101011100  esperado=00110101111101011100  valid_pulses=11  @t=297075000
+#   S1 (G1, 11b)       = 01001100100
+#   S2 (G2, 11b)       = 01111111100
+#   PARES (22b tiempo) = 0011010111110101110000
+# [PASS] palabra=01100111  leds=00110101111101100111  esperado=00110101111101100111  valid_pulses=11  @t=299955000
+#   S1 (G1, 11b)       = 01001101010
+#   S2 (G2, 11b)       = 01111110110
+#   PARES (22b tiempo) = 0011010111110110011100
+# [PASS] palabra=01101000  leds=00110101001011000000  esperado=00110101001011000000  valid_pulses=11  @t=302835000
+#   S1 (G1, 11b)       = 01000110000
+#   S2 (G2, 11b)       = 01110010000
+#   PARES (22b tiempo) = 0011010100101100000000
+# [PASS] palabra=01101001  leds=00110101001011111011  esperado=00110101001011111011  valid_pulses=11  @t=305715000
+#   S1 (G1, 11b)       = 01000111110
+#   S2 (G2, 11b)       = 01110011010
+#   PARES (22b tiempo) = 0011010100101111101100
+# [PASS] palabra=01101010  leds=00110101001000101100  esperado=00110101001000101100  valid_pulses=11  @t=308595000
+#   S1 (G1, 11b)       = 01000101100
+#   S2 (G2, 11b)       = 01110000100
+#   PARES (22b tiempo) = 0011010100100010110000
+# [PASS] palabra=01101011  leds=00110101001000010111  esperado=00110101001000010111  valid_pulses=11  @t=311475000
+#   S1 (G1, 11b)       = 01000100010
+#   S2 (G2, 11b)       = 01110001110
+#   PARES (22b tiempo) = 0011010100100001011100
+# [PASS] palabra=01101100  leds=00110101000101110000  esperado=00110101000101110000  valid_pulses=11  @t=314355000
+#   S1 (G1, 11b)       = 01000001000
+#   S2 (G2, 11b)       = 01110111000
+#   PARES (22b tiempo) = 0011010100010111000000
+# [PASS] palabra=01101101  leds=00110101000101001011  esperado=00110101000101001011  valid_pulses=11  @t=317235000
+#   S1 (G1, 11b)       = 01000000110
+#   S2 (G2, 11b)       = 01110110010
+#   PARES (22b tiempo) = 0011010100010100101100
+# [PASS] palabra=01101110  leds=00110101000110011100  esperado=00110101000110011100  valid_pulses=11  @t=320115000
+#   S1 (G1, 11b)       = 01000010100
+#   S2 (G2, 11b)       = 01110101100
+#   PARES (22b tiempo) = 0011010100011001110000
+# [PASS] palabra=01101111  leds=00110101000110100111  esperado=00110101000110100111  valid_pulses=11  @t=322995000
+#   S1 (G1, 11b)       = 01000011010
+#   S2 (G2, 11b)       = 01110100110
+#   PARES (22b tiempo) = 0011010100011010011100
+# [PASS] palabra=01110000  leds=00110110011100000000  esperado=00110110011100000000  valid_pulses=11  @t=325875000
+#   S1 (G1, 11b)       = 01010100000
+#   S2 (G2, 11b)       = 01101100000
+#   PARES (22b tiempo) = 0011011001110000000000
+# [PASS] palabra=01110001  leds=00110110011100111011  esperado=00110110011100111011  valid_pulses=11  @t=328755000
+#   S1 (G1, 11b)       = 01010101110
+#   S2 (G2, 11b)       = 01101101010
+#   PARES (22b tiempo) = 0011011001110011101100
+# [PASS] palabra=01110010  leds=00110110011111101100  esperado=00110110011111101100  valid_pulses=11  @t=331635000
+#   S1 (G1, 11b)       = 01010111100
+#   S2 (G2, 11b)       = 01101110100
+#   PARES (22b tiempo) = 0011011001111110110000
+# [PASS] palabra=01110011  leds=00110110011111010111  esperado=00110110011111010111  valid_pulses=11  @t=334515000
+#   S1 (G1, 11b)       = 01010110010
+#   S2 (G2, 11b)       = 01101111110
+#   PARES (22b tiempo) = 0011011001111101011100
+# [PASS] palabra=01110100  leds=00110110010010110000  esperado=00110110010010110000  valid_pulses=11  @t=337395000
+#   S1 (G1, 11b)       = 01010011000
+#   S2 (G2, 11b)       = 01101001000
+#   PARES (22b tiempo) = 0011011001001011000000
+# [PASS] palabra=01110101  leds=00110110010010001011  esperado=00110110010010001011  valid_pulses=11  @t=340275000
+#   S1 (G1, 11b)       = 01010010110
+#   S2 (G2, 11b)       = 01101000010
+#   PARES (22b tiempo) = 0011011001001000101100
+# [PASS] palabra=01110110  leds=00110110010001011100  esperado=00110110010001011100  valid_pulses=11  @t=343155000
+#   S1 (G1, 11b)       = 01010000100
+#   S2 (G2, 11b)       = 01101011100
+#   PARES (22b tiempo) = 0011011001000101110000
+# [PASS] palabra=01110111  leds=00110110010001100111  esperado=00110110010001100111  valid_pulses=11  @t=346035000
+#   S1 (G1, 11b)       = 01010001010
+#   S2 (G2, 11b)       = 01101010110
+#   PARES (22b tiempo) = 0011011001000110011100
+# [PASS] palabra=01111000  leds=00110110100111000000  esperado=00110110100111000000  valid_pulses=11  @t=348915000
+#   S1 (G1, 11b)       = 01011010000
+#   S2 (G2, 11b)       = 01100110000
+#   PARES (22b tiempo) = 0011011010011100000000
+# [PASS] palabra=01111001  leds=00110110100111111011  esperado=00110110100111111011  valid_pulses=11  @t=351795000
+#   S1 (G1, 11b)       = 01011011110
+#   S2 (G2, 11b)       = 01100111010
+#   PARES (22b tiempo) = 0011011010011111101100
+# [PASS] palabra=01111010  leds=00110110100100101100  esperado=00110110100100101100  valid_pulses=11  @t=354675000
+#   S1 (G1, 11b)       = 01011001100
+#   S2 (G2, 11b)       = 01100100100
+#   PARES (22b tiempo) = 0011011010010010110000
+# [PASS] palabra=01111011  leds=00110110100100010111  esperado=00110110100100010111  valid_pulses=11  @t=357555000
+#   S1 (G1, 11b)       = 01011000010
+#   S2 (G2, 11b)       = 01100101110
+#   PARES (22b tiempo) = 0011011010010001011100
+# [PASS] palabra=01111100  leds=00110110101001110000  esperado=00110110101001110000  valid_pulses=11  @t=360435000
+#   S1 (G1, 11b)       = 01011101000
+#   S2 (G2, 11b)       = 01100011000
+#   PARES (22b tiempo) = 0011011010100111000000
+# [PASS] palabra=01111101  leds=00110110101001001011  esperado=00110110101001001011  valid_pulses=11  @t=363315000
+#   S1 (G1, 11b)       = 01011100110
+#   S2 (G2, 11b)       = 01100010010
+#   PARES (22b tiempo) = 0011011010100100101100
+# [PASS] palabra=01111110  leds=00110110101010011100  esperado=00110110101010011100  valid_pulses=11  @t=366195000
+#   S1 (G1, 11b)       = 01011110100
+#   S2 (G2, 11b)       = 01100001100
+#   PARES (22b tiempo) = 0011011010101001110000
+# [PASS] palabra=01111111  leds=00110110101010100111  esperado=00110110101010100111  valid_pulses=11  @t=369075000
+#   S1 (G1, 11b)       = 01011111010
+#   S2 (G2, 11b)       = 01100000110
+#   PARES (22b tiempo) = 0011011010101010011100
+# [PASS] palabra=10000000  leds=11101100000000000000  esperado=11101100000000000000  valid_pulses=11  @t=371955000
+#   S1 (G1, 11b)       = 11100000000
+#   S2 (G2, 11b)       = 10100000000
+#   PARES (22b tiempo) = 1110110000000000000000
+# [PASS] palabra=10000001  leds=11101100000000111011  esperado=11101100000000111011  valid_pulses=11  @t=374835000
+#   S1 (G1, 11b)       = 11100001110
+#   S2 (G2, 11b)       = 10100001010
+#   PARES (22b tiempo) = 1110110000000011101100
+# [PASS] palabra=10000010  leds=11101100000011101100  esperado=11101100000011101100  valid_pulses=11  @t=377715000
+#   S1 (G1, 11b)       = 11100011100
+#   S2 (G2, 11b)       = 10100010100
+#   PARES (22b tiempo) = 1110110000001110110000
+# [PASS] palabra=10000011  leds=11101100000011010111  esperado=11101100000011010111  valid_pulses=11  @t=380595000
+#   S1 (G1, 11b)       = 11100010010
+#   S2 (G2, 11b)       = 10100011110
+#   PARES (22b tiempo) = 1110110000001101011100
+# [PASS] palabra=10000100  leds=11101100001110110000  esperado=11101100001110110000  valid_pulses=11  @t=383475000
+#   S1 (G1, 11b)       = 11100111000
+#   S2 (G2, 11b)       = 10100101000
+#   PARES (22b tiempo) = 1110110000111011000000
+# [PASS] palabra=10000101  leds=11101100001110001011  esperado=11101100001110001011  valid_pulses=11  @t=386355000
+#   S1 (G1, 11b)       = 11100110110
+#   S2 (G2, 11b)       = 10100100010
+#   PARES (22b tiempo) = 1110110000111000101100
+# [PASS] palabra=10000110  leds=11101100001101011100  esperado=11101100001101011100  valid_pulses=11  @t=389235000
+#   S1 (G1, 11b)       = 11100100100
+#   S2 (G2, 11b)       = 10100111100
+#   PARES (22b tiempo) = 1110110000110101110000
+# [PASS] palabra=10000111  leds=11101100001101100111  esperado=11101100001101100111  valid_pulses=11  @t=392115000
+#   S1 (G1, 11b)       = 11100101010
+#   S2 (G2, 11b)       = 10100110110
+#   PARES (22b tiempo) = 1110110000110110011100
+# [PASS] palabra=10001000  leds=11101100111011000000  esperado=11101100111011000000  valid_pulses=11  @t=394995000
+#   S1 (G1, 11b)       = 11101110000
+#   S2 (G2, 11b)       = 10101010000
+#   PARES (22b tiempo) = 1110110011101100000000
+# [PASS] palabra=10001001  leds=11101100111011111011  esperado=11101100111011111011  valid_pulses=11  @t=397875000
+#   S1 (G1, 11b)       = 11101111110
+#   S2 (G2, 11b)       = 10101011010
+#   PARES (22b tiempo) = 1110110011101111101100
+# [PASS] palabra=10001010  leds=11101100111000101100  esperado=11101100111000101100  valid_pulses=11  @t=400755000
+#   S1 (G1, 11b)       = 11101101100
+#   S2 (G2, 11b)       = 10101000100
+#   PARES (22b tiempo) = 1110110011100010110000
+# [PASS] palabra=10001011  leds=11101100111000010111  esperado=11101100111000010111  valid_pulses=11  @t=403635000
+#   S1 (G1, 11b)       = 11101100010
+#   S2 (G2, 11b)       = 10101001110
+#   PARES (22b tiempo) = 1110110011100001011100
+# [PASS] palabra=10001100  leds=11101100110101110000  esperado=11101100110101110000  valid_pulses=11  @t=406515000
+#   S1 (G1, 11b)       = 11101001000
+#   S2 (G2, 11b)       = 10101111000
+#   PARES (22b tiempo) = 1110110011010111000000
+# [PASS] palabra=10001101  leds=11101100110101001011  esperado=11101100110101001011  valid_pulses=11  @t=409395000
+#   S1 (G1, 11b)       = 11101000110
+#   S2 (G2, 11b)       = 10101110010
+#   PARES (22b tiempo) = 1110110011010100101100
+# [PASS] palabra=10001110  leds=11101100110110011100  esperado=11101100110110011100  valid_pulses=11  @t=412275000
+#   S1 (G1, 11b)       = 11101010100
+#   S2 (G2, 11b)       = 10101101100
+#   PARES (22b tiempo) = 1110110011011001110000
+# [PASS] palabra=10001111  leds=11101100110110100111  esperado=11101100110110100111  valid_pulses=11  @t=415155000
+#   S1 (G1, 11b)       = 11101011010
+#   S2 (G2, 11b)       = 10101100110
+#   PARES (22b tiempo) = 1110110011011010011100
+# [PASS] palabra=10010000  leds=11101111101100000000  esperado=11101111101100000000  valid_pulses=11  @t=418035000
+#   S1 (G1, 11b)       = 11111100000
+#   S2 (G2, 11b)       = 10110100000
+#   PARES (22b tiempo) = 1110111110110000000000
+# [PASS] palabra=10010001  leds=11101111101100111011  esperado=11101111101100111011  valid_pulses=11  @t=420915000
+#   S1 (G1, 11b)       = 11111101110
+#   S2 (G2, 11b)       = 10110101010
+#   PARES (22b tiempo) = 1110111110110011101100
+# [PASS] palabra=10010010  leds=11101111101111101100  esperado=11101111101111101100  valid_pulses=11  @t=423795000
+#   S1 (G1, 11b)       = 11111111100
+#   S2 (G2, 11b)       = 10110110100
+#   PARES (22b tiempo) = 1110111110111110110000
+# [PASS] palabra=10010011  leds=11101111101111010111  esperado=11101111101111010111  valid_pulses=11  @t=426675000
+#   S1 (G1, 11b)       = 11111110010
+#   S2 (G2, 11b)       = 10110111110
+#   PARES (22b tiempo) = 1110111110111101011100
+# [PASS] palabra=10010100  leds=11101111100010110000  esperado=11101111100010110000  valid_pulses=11  @t=429555000
+#   S1 (G1, 11b)       = 11111011000
+#   S2 (G2, 11b)       = 10110001000
+#   PARES (22b tiempo) = 1110111110001011000000
+# [PASS] palabra=10010101  leds=11101111100010001011  esperado=11101111100010001011  valid_pulses=11  @t=432435000
+#   S1 (G1, 11b)       = 11111010110
+#   S2 (G2, 11b)       = 10110000010
+#   PARES (22b tiempo) = 1110111110001000101100
+# [PASS] palabra=10010110  leds=11101111100001011100  esperado=11101111100001011100  valid_pulses=11  @t=435315000
+#   S1 (G1, 11b)       = 11111000100
+#   S2 (G2, 11b)       = 10110011100
+#   PARES (22b tiempo) = 1110111110000101110000
+# [PASS] palabra=10010111  leds=11101111100001100111  esperado=11101111100001100111  valid_pulses=11  @t=438195000
+#   S1 (G1, 11b)       = 11111001010
+#   S2 (G2, 11b)       = 10110010110
+#   PARES (22b tiempo) = 1110111110000110011100
+# [PASS] palabra=10011000  leds=11101111010111000000  esperado=11101111010111000000  valid_pulses=11  @t=441075000
+#   S1 (G1, 11b)       = 11110010000
+#   S2 (G2, 11b)       = 10111110000
+#   PARES (22b tiempo) = 1110111101011100000000
+# [PASS] palabra=10011001  leds=11101111010111111011  esperado=11101111010111111011  valid_pulses=11  @t=443955000
+#   S1 (G1, 11b)       = 11110011110
+#   S2 (G2, 11b)       = 10111111010
+#   PARES (22b tiempo) = 1110111101011111101100
+# [PASS] palabra=10011010  leds=11101111010100101100  esperado=11101111010100101100  valid_pulses=11  @t=446835000
+#   S1 (G1, 11b)       = 11110001100
+#   S2 (G2, 11b)       = 10111100100
+#   PARES (22b tiempo) = 1110111101010010110000
+# [PASS] palabra=10011011  leds=11101111010100010111  esperado=11101111010100010111  valid_pulses=11  @t=449715000
+#   S1 (G1, 11b)       = 11110000010
+#   S2 (G2, 11b)       = 10111101110
+#   PARES (22b tiempo) = 1110111101010001011100
+# [PASS] palabra=10011100  leds=11101111011001110000  esperado=11101111011001110000  valid_pulses=11  @t=452595000
+#   S1 (G1, 11b)       = 11110101000
+#   S2 (G2, 11b)       = 10111011000
+#   PARES (22b tiempo) = 1110111101100111000000
+# [PASS] palabra=10011101  leds=11101111011001001011  esperado=11101111011001001011  valid_pulses=11  @t=455475000
+#   S1 (G1, 11b)       = 11110100110
+#   S2 (G2, 11b)       = 10111010010
+#   PARES (22b tiempo) = 1110111101100100101100
+# [PASS] palabra=10011110  leds=11101111011010011100  esperado=11101111011010011100  valid_pulses=11  @t=458355000
+#   S1 (G1, 11b)       = 11110110100
+#   S2 (G2, 11b)       = 10111001100
+#   PARES (22b tiempo) = 1110111101101001110000
+# [PASS] palabra=10011111  leds=11101111011010100111  esperado=11101111011010100111  valid_pulses=11  @t=461235000
+#   S1 (G1, 11b)       = 11110111010
+#   S2 (G2, 11b)       = 10111000110
+#   PARES (22b tiempo) = 1110111101101010011100
+# [PASS] palabra=10100000  leds=11100010110000000000  esperado=11100010110000000000  valid_pulses=11  @t=464115000
+#   S1 (G1, 11b)       = 11011000000
+#   S2 (G2, 11b)       = 10001000000
+#   PARES (22b tiempo) = 1110001011000000000000
+# [PASS] palabra=10100001  leds=11100010110000111011  esperado=11100010110000111011  valid_pulses=11  @t=466995000
+#   S1 (G1, 11b)       = 11011001110
+#   S2 (G2, 11b)       = 10001001010
+#   PARES (22b tiempo) = 1110001011000011101100
+# [PASS] palabra=10100010  leds=11100010110011101100  esperado=11100010110011101100  valid_pulses=11  @t=469875000
+#   S1 (G1, 11b)       = 11011011100
+#   S2 (G2, 11b)       = 10001010100
+#   PARES (22b tiempo) = 1110001011001110110000
+# [PASS] palabra=10100011  leds=11100010110011010111  esperado=11100010110011010111  valid_pulses=11  @t=472755000
+#   S1 (G1, 11b)       = 11011010010
+#   S2 (G2, 11b)       = 10001011110
+#   PARES (22b tiempo) = 1110001011001101011100
+# [PASS] palabra=10100100  leds=11100010111110110000  esperado=11100010111110110000  valid_pulses=11  @t=475635000
+#   S1 (G1, 11b)       = 11011111000
+#   S2 (G2, 11b)       = 10001101000
+#   PARES (22b tiempo) = 1110001011111011000000
+# [PASS] palabra=10100101  leds=11100010111110001011  esperado=11100010111110001011  valid_pulses=11  @t=478515000
+#   S1 (G1, 11b)       = 11011110110
+#   S2 (G2, 11b)       = 10001100010
+#   PARES (22b tiempo) = 1110001011111000101100
+# [PASS] palabra=10100110  leds=11100010111101011100  esperado=11100010111101011100  valid_pulses=11  @t=481395000
+#   S1 (G1, 11b)       = 11011100100
+#   S2 (G2, 11b)       = 10001111100
+#   PARES (22b tiempo) = 1110001011110101110000
+# [PASS] palabra=10100111  leds=11100010111101100111  esperado=11100010111101100111  valid_pulses=11  @t=484275000
+#   S1 (G1, 11b)       = 11011101010
+#   S2 (G2, 11b)       = 10001110110
+#   PARES (22b tiempo) = 1110001011110110011100
+# [PASS] palabra=10101000  leds=11100010001011000000  esperado=11100010001011000000  valid_pulses=11  @t=487155000
+#   S1 (G1, 11b)       = 11010110000
+#   S2 (G2, 11b)       = 10000010000
+#   PARES (22b tiempo) = 1110001000101100000000
+# [PASS] palabra=10101001  leds=11100010001011111011  esperado=11100010001011111011  valid_pulses=11  @t=490035000
+#   S1 (G1, 11b)       = 11010111110
+#   S2 (G2, 11b)       = 10000011010
+#   PARES (22b tiempo) = 1110001000101111101100
+# [PASS] palabra=10101010  leds=11100010001000101100  esperado=11100010001000101100  valid_pulses=11  @t=492915000
+#   S1 (G1, 11b)       = 11010101100
+#   S2 (G2, 11b)       = 10000000100
+#   PARES (22b tiempo) = 1110001000100010110000
+# [PASS] palabra=10101011  leds=11100010001000010111  esperado=11100010001000010111  valid_pulses=11  @t=495795000
+#   S1 (G1, 11b)       = 11010100010
+#   S2 (G2, 11b)       = 10000001110
+#   PARES (22b tiempo) = 1110001000100001011100
+# [PASS] palabra=10101100  leds=11100010000101110000  esperado=11100010000101110000  valid_pulses=11  @t=498675000
+#   S1 (G1, 11b)       = 11010001000
+#   S2 (G2, 11b)       = 10000111000
+#   PARES (22b tiempo) = 1110001000010111000000
+# [PASS] palabra=10101101  leds=11100010000101001011  esperado=11100010000101001011  valid_pulses=11  @t=501555000
+#   S1 (G1, 11b)       = 11010000110
+#   S2 (G2, 11b)       = 10000110010
+#   PARES (22b tiempo) = 1110001000010100101100
+# [PASS] palabra=10101110  leds=11100010000110011100  esperado=11100010000110011100  valid_pulses=11  @t=504435000
+#   S1 (G1, 11b)       = 11010010100
+#   S2 (G2, 11b)       = 10000101100
+#   PARES (22b tiempo) = 1110001000011001110000
+# [PASS] palabra=10101111  leds=11100010000110100111  esperado=11100010000110100111  valid_pulses=11  @t=507315000
+#   S1 (G1, 11b)       = 11010011010
+#   S2 (G2, 11b)       = 10000100110
+#   PARES (22b tiempo) = 1110001000011010011100
+# [PASS] palabra=10110000  leds=11100001011100000000  esperado=11100001011100000000  valid_pulses=11  @t=510195000
+#   S1 (G1, 11b)       = 11000100000
+#   S2 (G2, 11b)       = 10011100000
+#   PARES (22b tiempo) = 1110000101110000000000
+# [PASS] palabra=10110001  leds=11100001011100111011  esperado=11100001011100111011  valid_pulses=11  @t=513075000
+#   S1 (G1, 11b)       = 11000101110
+#   S2 (G2, 11b)       = 10011101010
+#   PARES (22b tiempo) = 1110000101110011101100
+# [PASS] palabra=10110010  leds=11100001011111101100  esperado=11100001011111101100  valid_pulses=11  @t=515955000
+#   S1 (G1, 11b)       = 11000111100
+#   S2 (G2, 11b)       = 10011110100
+#   PARES (22b tiempo) = 1110000101111110110000
+# [PASS] palabra=10110011  leds=11100001011111010111  esperado=11100001011111010111  valid_pulses=11  @t=518835000
+#   S1 (G1, 11b)       = 11000110010
+#   S2 (G2, 11b)       = 10011111110
+#   PARES (22b tiempo) = 1110000101111101011100
+# [PASS] palabra=10110100  leds=11100001010010110000  esperado=11100001010010110000  valid_pulses=11  @t=521715000
+#   S1 (G1, 11b)       = 11000011000
+#   S2 (G2, 11b)       = 10011001000
+#   PARES (22b tiempo) = 1110000101001011000000
+# [PASS] palabra=10110101  leds=11100001010010001011  esperado=11100001010010001011  valid_pulses=11  @t=524595000
+#   S1 (G1, 11b)       = 11000010110
+#   S2 (G2, 11b)       = 10011000010
+#   PARES (22b tiempo) = 1110000101001000101100
+# [PASS] palabra=10110110  leds=11100001010001011100  esperado=11100001010001011100  valid_pulses=11  @t=527475000
+#   S1 (G1, 11b)       = 11000000100
+#   S2 (G2, 11b)       = 10011011100
+#   PARES (22b tiempo) = 1110000101000101110000
+# [PASS] palabra=10110111  leds=11100001010001100111  esperado=11100001010001100111  valid_pulses=11  @t=530355000
+#   S1 (G1, 11b)       = 11000001010
+#   S2 (G2, 11b)       = 10011010110
+#   PARES (22b tiempo) = 1110000101000110011100
+# [PASS] palabra=10111000  leds=11100001100111000000  esperado=11100001100111000000  valid_pulses=11  @t=533235000
+#   S1 (G1, 11b)       = 11001010000
+#   S2 (G2, 11b)       = 10010110000
+#   PARES (22b tiempo) = 1110000110011100000000
+# [PASS] palabra=10111001  leds=11100001100111111011  esperado=11100001100111111011  valid_pulses=11  @t=536115000
+#   S1 (G1, 11b)       = 11001011110
+#   S2 (G2, 11b)       = 10010111010
+#   PARES (22b tiempo) = 1110000110011111101100
+# [PASS] palabra=10111010  leds=11100001100100101100  esperado=11100001100100101100  valid_pulses=11  @t=538995000
+#   S1 (G1, 11b)       = 11001001100
+#   S2 (G2, 11b)       = 10010100100
+#   PARES (22b tiempo) = 1110000110010010110000
+# [PASS] palabra=10111011  leds=11100001100100010111  esperado=11100001100100010111  valid_pulses=11  @t=541875000
+#   S1 (G1, 11b)       = 11001000010
+#   S2 (G2, 11b)       = 10010101110
+#   PARES (22b tiempo) = 1110000110010001011100
+# [PASS] palabra=10111100  leds=11100001101001110000  esperado=11100001101001110000  valid_pulses=11  @t=544755000
+#   S1 (G1, 11b)       = 11001101000
+#   S2 (G2, 11b)       = 10010011000
+#   PARES (22b tiempo) = 1110000110100111000000
+# [PASS] palabra=10111101  leds=11100001101001001011  esperado=11100001101001001011  valid_pulses=11  @t=547635000
+#   S1 (G1, 11b)       = 11001100110
+#   S2 (G2, 11b)       = 10010010010
+#   PARES (22b tiempo) = 1110000110100100101100
+# [PASS] palabra=10111110  leds=11100001101010011100  esperado=11100001101010011100  valid_pulses=11  @t=550515000
+#   S1 (G1, 11b)       = 11001110100
+#   S2 (G2, 11b)       = 10010001100
+#   PARES (22b tiempo) = 1110000110101001110000
+# [PASS] palabra=10111111  leds=11100001101010100111  esperado=11100001101010100111  valid_pulses=11  @t=553395000
+#   S1 (G1, 11b)       = 11001111010
+#   S2 (G2, 11b)       = 10010000110
+#   PARES (22b tiempo) = 1110000110101010011100
+# [PASS] palabra=11000000  leds=11010111000000000000  esperado=11010111000000000000  valid_pulses=11  @t=556275000
+#   S1 (G1, 11b)       = 10010000000
+#   S2 (G2, 11b)       = 11110000000
+#   PARES (22b tiempo) = 1101011100000000000000
+# [PASS] palabra=11000001  leds=11010111000000111011  esperado=11010111000000111011  valid_pulses=11  @t=559155000
+#   S1 (G1, 11b)       = 10010001110
+#   S2 (G2, 11b)       = 11110001010
+#   PARES (22b tiempo) = 1101011100000011101100
+# [PASS] palabra=11000010  leds=11010111000011101100  esperado=11010111000011101100  valid_pulses=11  @t=562035000
+#   S1 (G1, 11b)       = 10010011100
+#   S2 (G2, 11b)       = 11110010100
+#   PARES (22b tiempo) = 1101011100001110110000
+# [PASS] palabra=11000011  leds=11010111000011010111  esperado=11010111000011010111  valid_pulses=11  @t=564915000
+#   S1 (G1, 11b)       = 10010010010
+#   S2 (G2, 11b)       = 11110011110
+#   PARES (22b tiempo) = 1101011100001101011100
+# [PASS] palabra=11000100  leds=11010111001110110000  esperado=11010111001110110000  valid_pulses=11  @t=567795000
+#   S1 (G1, 11b)       = 10010111000
+#   S2 (G2, 11b)       = 11110101000
+#   PARES (22b tiempo) = 1101011100111011000000
+# [PASS] palabra=11000101  leds=11010111001110001011  esperado=11010111001110001011  valid_pulses=11  @t=570675000
+#   S1 (G1, 11b)       = 10010110110
+#   S2 (G2, 11b)       = 11110100010
+#   PARES (22b tiempo) = 1101011100111000101100
+# [PASS] palabra=11000110  leds=11010111001101011100  esperado=11010111001101011100  valid_pulses=11  @t=573555000
+#   S1 (G1, 11b)       = 10010100100
+#   S2 (G2, 11b)       = 11110111100
+#   PARES (22b tiempo) = 1101011100110101110000
+# [PASS] palabra=11000111  leds=11010111001101100111  esperado=11010111001101100111  valid_pulses=11  @t=576435000
+#   S1 (G1, 11b)       = 10010101010
+#   S2 (G2, 11b)       = 11110110110
+#   PARES (22b tiempo) = 1101011100110110011100
+# [PASS] palabra=11001000  leds=11010111111011000000  esperado=11010111111011000000  valid_pulses=11  @t=579315000
+#   S1 (G1, 11b)       = 10011110000
+#   S2 (G2, 11b)       = 11111010000
+#   PARES (22b tiempo) = 1101011111101100000000
+# [PASS] palabra=11001001  leds=11010111111011111011  esperado=11010111111011111011  valid_pulses=11  @t=582195000
+#   S1 (G1, 11b)       = 10011111110
+#   S2 (G2, 11b)       = 11111011010
+#   PARES (22b tiempo) = 1101011111101111101100
+# [PASS] palabra=11001010  leds=11010111111000101100  esperado=11010111111000101100  valid_pulses=11  @t=585075000
+#   S1 (G1, 11b)       = 10011101100
+#   S2 (G2, 11b)       = 11111000100
+#   PARES (22b tiempo) = 1101011111100010110000
+# [PASS] palabra=11001011  leds=11010111111000010111  esperado=11010111111000010111  valid_pulses=11  @t=587955000
+#   S1 (G1, 11b)       = 10011100010
+#   S2 (G2, 11b)       = 11111001110
+#   PARES (22b tiempo) = 1101011111100001011100
+# [PASS] palabra=11001100  leds=11010111110101110000  esperado=11010111110101110000  valid_pulses=11  @t=590835000
+#   S1 (G1, 11b)       = 10011001000
+#   S2 (G2, 11b)       = 11111111000
+#   PARES (22b tiempo) = 1101011111010111000000
+# [PASS] palabra=11001101  leds=11010111110101001011  esperado=11010111110101001011  valid_pulses=11  @t=593715000
+#   S1 (G1, 11b)       = 10011000110
+#   S2 (G2, 11b)       = 11111110010
+#   PARES (22b tiempo) = 1101011111010100101100
+# [PASS] palabra=11001110  leds=11010111110110011100  esperado=11010111110110011100  valid_pulses=11  @t=596595000
+#   S1 (G1, 11b)       = 10011010100
+#   S2 (G2, 11b)       = 11111101100
+#   PARES (22b tiempo) = 1101011111011001110000
+# [PASS] palabra=11001111  leds=11010111110110100111  esperado=11010111110110100111  valid_pulses=11  @t=599475000
+#   S1 (G1, 11b)       = 10011011010
+#   S2 (G2, 11b)       = 11111100110
+#   PARES (22b tiempo) = 1101011111011010011100
+# [PASS] palabra=11010000  leds=11010100101100000000  esperado=11010100101100000000  valid_pulses=11  @t=602355000
+#   S1 (G1, 11b)       = 10001100000
+#   S2 (G2, 11b)       = 11100100000
+#   PARES (22b tiempo) = 1101010010110000000000
+# [PASS] palabra=11010001  leds=11010100101100111011  esperado=11010100101100111011  valid_pulses=11  @t=605235000
+#   S1 (G1, 11b)       = 10001101110
+#   S2 (G2, 11b)       = 11100101010
+#   PARES (22b tiempo) = 1101010010110011101100
+# [PASS] palabra=11010010  leds=11010100101111101100  esperado=11010100101111101100  valid_pulses=11  @t=608115000
+#   S1 (G1, 11b)       = 10001111100
+#   S2 (G2, 11b)       = 11100110100
+#   PARES (22b tiempo) = 1101010010111110110000
+# [PASS] palabra=11010011  leds=11010100101111010111  esperado=11010100101111010111  valid_pulses=11  @t=610995000
+#   S1 (G1, 11b)       = 10001110010
+#   S2 (G2, 11b)       = 11100111110
+#   PARES (22b tiempo) = 1101010010111101011100
+# [PASS] palabra=11010100  leds=11010100100010110000  esperado=11010100100010110000  valid_pulses=11  @t=613875000
+#   S1 (G1, 11b)       = 10001011000
+#   S2 (G2, 11b)       = 11100001000
+#   PARES (22b tiempo) = 1101010010001011000000
+# [PASS] palabra=11010101  leds=11010100100010001011  esperado=11010100100010001011  valid_pulses=11  @t=616755000
+#   S1 (G1, 11b)       = 10001010110
+#   S2 (G2, 11b)       = 11100000010
+#   PARES (22b tiempo) = 1101010010001000101100
+# [PASS] palabra=11010110  leds=11010100100001011100  esperado=11010100100001011100  valid_pulses=11  @t=619635000
+#   S1 (G1, 11b)       = 10001000100
+#   S2 (G2, 11b)       = 11100011100
+#   PARES (22b tiempo) = 1101010010000101110000
+# [PASS] palabra=11010111  leds=11010100100001100111  esperado=11010100100001100111  valid_pulses=11  @t=622515000
+#   S1 (G1, 11b)       = 10001001010
+#   S2 (G2, 11b)       = 11100010110
+#   PARES (22b tiempo) = 1101010010000110011100
+# [PASS] palabra=11011000  leds=11010100010111000000  esperado=11010100010111000000  valid_pulses=11  @t=625395000
+#   S1 (G1, 11b)       = 10000010000
+#   S2 (G2, 11b)       = 11101110000
+#   PARES (22b tiempo) = 1101010001011100000000
+# [PASS] palabra=11011001  leds=11010100010111111011  esperado=11010100010111111011  valid_pulses=11  @t=628275000
+#   S1 (G1, 11b)       = 10000011110
+#   S2 (G2, 11b)       = 11101111010
+#   PARES (22b tiempo) = 1101010001011111101100
+# [PASS] palabra=11011010  leds=11010100010100101100  esperado=11010100010100101100  valid_pulses=11  @t=631155000
+#   S1 (G1, 11b)       = 10000001100
+#   S2 (G2, 11b)       = 11101100100
+#   PARES (22b tiempo) = 1101010001010010110000
+# [PASS] palabra=11011011  leds=11010100010100010111  esperado=11010100010100010111  valid_pulses=11  @t=634035000
+#   S1 (G1, 11b)       = 10000000010
+#   S2 (G2, 11b)       = 11101101110
+#   PARES (22b tiempo) = 1101010001010001011100
+# [PASS] palabra=11011100  leds=11010100011001110000  esperado=11010100011001110000  valid_pulses=11  @t=636915000
+#   S1 (G1, 11b)       = 10000101000
+#   S2 (G2, 11b)       = 11101011000
+#   PARES (22b tiempo) = 1101010001100111000000
+# [PASS] palabra=11011101  leds=11010100011001001011  esperado=11010100011001001011  valid_pulses=11  @t=639795000
+#   S1 (G1, 11b)       = 10000100110
+#   S2 (G2, 11b)       = 11101010010
+#   PARES (22b tiempo) = 1101010001100100101100
+# [PASS] palabra=11011110  leds=11010100011010011100  esperado=11010100011010011100  valid_pulses=11  @t=642675000
+#   S1 (G1, 11b)       = 10000110100
+#   S2 (G2, 11b)       = 11101001100
+#   PARES (22b tiempo) = 1101010001101001110000
+# [PASS] palabra=11011111  leds=11010100011010100111  esperado=11010100011010100111  valid_pulses=11  @t=645555000
+#   S1 (G1, 11b)       = 10000111010
+#   S2 (G2, 11b)       = 11101000110
+#   PARES (22b tiempo) = 1101010001101010011100
+# [PASS] palabra=11100000  leds=11011001110000000000  esperado=11011001110000000000  valid_pulses=11  @t=648435000
+#   S1 (G1, 11b)       = 10101000000
+#   S2 (G2, 11b)       = 11011000000
+#   PARES (22b tiempo) = 1101100111000000000000
+# [PASS] palabra=11100001  leds=11011001110000111011  esperado=11011001110000111011  valid_pulses=11  @t=651315000
+#   S1 (G1, 11b)       = 10101001110
+#   S2 (G2, 11b)       = 11011001010
+#   PARES (22b tiempo) = 1101100111000011101100
+# [PASS] palabra=11100010  leds=11011001110011101100  esperado=11011001110011101100  valid_pulses=11  @t=654195000
+#   S1 (G1, 11b)       = 10101011100
+#   S2 (G2, 11b)       = 11011010100
+#   PARES (22b tiempo) = 1101100111001110110000
+# [PASS] palabra=11100011  leds=11011001110011010111  esperado=11011001110011010111  valid_pulses=11  @t=657075000
+#   S1 (G1, 11b)       = 10101010010
+#   S2 (G2, 11b)       = 11011011110
+#   PARES (22b tiempo) = 1101100111001101011100
+# [PASS] palabra=11100100  leds=11011001111110110000  esperado=11011001111110110000  valid_pulses=11  @t=659955000
+#   S1 (G1, 11b)       = 10101111000
+#   S2 (G2, 11b)       = 11011101000
+#   PARES (22b tiempo) = 1101100111111011000000
+# [PASS] palabra=11100101  leds=11011001111110001011  esperado=11011001111110001011  valid_pulses=11  @t=662835000
+#   S1 (G1, 11b)       = 10101110110
+#   S2 (G2, 11b)       = 11011100010
+#   PARES (22b tiempo) = 1101100111111000101100
+# [PASS] palabra=11100110  leds=11011001111101011100  esperado=11011001111101011100  valid_pulses=11  @t=665715000
+#   S1 (G1, 11b)       = 10101100100
+#   S2 (G2, 11b)       = 11011111100
+#   PARES (22b tiempo) = 1101100111110101110000
+# [PASS] palabra=11100111  leds=11011001111101100111  esperado=11011001111101100111  valid_pulses=11  @t=668595000
+#   S1 (G1, 11b)       = 10101101010
+#   S2 (G2, 11b)       = 11011110110
+#   PARES (22b tiempo) = 1101100111110110011100
+# [PASS] palabra=11101000  leds=11011001001011000000  esperado=11011001001011000000  valid_pulses=11  @t=671475000
+#   S1 (G1, 11b)       = 10100110000
+#   S2 (G2, 11b)       = 11010010000
+#   PARES (22b tiempo) = 1101100100101100000000
+# [PASS] palabra=11101001  leds=11011001001011111011  esperado=11011001001011111011  valid_pulses=11  @t=674355000
+#   S1 (G1, 11b)       = 10100111110
+#   S2 (G2, 11b)       = 11010011010
+#   PARES (22b tiempo) = 1101100100101111101100
+# [PASS] palabra=11101010  leds=11011001001000101100  esperado=11011001001000101100  valid_pulses=11  @t=677235000
+#   S1 (G1, 11b)       = 10100101100
+#   S2 (G2, 11b)       = 11010000100
+#   PARES (22b tiempo) = 1101100100100010110000
+# [PASS] palabra=11101011  leds=11011001001000010111  esperado=11011001001000010111  valid_pulses=11  @t=680115000
+#   S1 (G1, 11b)       = 10100100010
+#   S2 (G2, 11b)       = 11010001110
+#   PARES (22b tiempo) = 1101100100100001011100
+# [PASS] palabra=11101100  leds=11011001000101110000  esperado=11011001000101110000  valid_pulses=11  @t=682995000
+#   S1 (G1, 11b)       = 10100001000
+#   S2 (G2, 11b)       = 11010111000
+#   PARES (22b tiempo) = 1101100100010111000000
+# [PASS] palabra=11101101  leds=11011001000101001011  esperado=11011001000101001011  valid_pulses=11  @t=685875000
+#   S1 (G1, 11b)       = 10100000110
+#   S2 (G2, 11b)       = 11010110010
+#   PARES (22b tiempo) = 1101100100010100101100
+# [PASS] palabra=11101110  leds=11011001000110011100  esperado=11011001000110011100  valid_pulses=11  @t=688755000
+#   S1 (G1, 11b)       = 10100010100
+#   S2 (G2, 11b)       = 11010101100
+#   PARES (22b tiempo) = 1101100100011001110000
+# [PASS] palabra=11101111  leds=11011001000110100111  esperado=11011001000110100111  valid_pulses=11  @t=691635000
+#   S1 (G1, 11b)       = 10100011010
+#   S2 (G2, 11b)       = 11010100110
+#   PARES (22b tiempo) = 1101100100011010011100
+# [PASS] palabra=11110000  leds=11011010011100000000  esperado=11011010011100000000  valid_pulses=11  @t=694515000
+#   S1 (G1, 11b)       = 10110100000
+#   S2 (G2, 11b)       = 11001100000
+#   PARES (22b tiempo) = 1101101001110000000000
+# [PASS] palabra=11110001  leds=11011010011100111011  esperado=11011010011100111011  valid_pulses=11  @t=697395000
+#   S1 (G1, 11b)       = 10110101110
+#   S2 (G2, 11b)       = 11001101010
+#   PARES (22b tiempo) = 1101101001110011101100
+# [PASS] palabra=11110010  leds=11011010011111101100  esperado=11011010011111101100  valid_pulses=11  @t=700275000
+#   S1 (G1, 11b)       = 10110111100
+#   S2 (G2, 11b)       = 11001110100
+#   PARES (22b tiempo) = 1101101001111110110000
+# [PASS] palabra=11110011  leds=11011010011111010111  esperado=11011010011111010111  valid_pulses=11  @t=703155000
+#   S1 (G1, 11b)       = 10110110010
+#   S2 (G2, 11b)       = 11001111110
+#   PARES (22b tiempo) = 1101101001111101011100
+# [PASS] palabra=11110100  leds=11011010010010110000  esperado=11011010010010110000  valid_pulses=11  @t=706035000
+#   S1 (G1, 11b)       = 10110011000
+#   S2 (G2, 11b)       = 11001001000
+#   PARES (22b tiempo) = 1101101001001011000000
+# [PASS] palabra=11110101  leds=11011010010010001011  esperado=11011010010010001011  valid_pulses=11  @t=708915000
+#   S1 (G1, 11b)       = 10110010110
+#   S2 (G2, 11b)       = 11001000010
+#   PARES (22b tiempo) = 1101101001001000101100
+# [PASS] palabra=11110110  leds=11011010010001011100  esperado=11011010010001011100  valid_pulses=11  @t=711795000
+#   S1 (G1, 11b)       = 10110000100
+#   S2 (G2, 11b)       = 11001011100
+#   PARES (22b tiempo) = 1101101001000101110000
+# [PASS] palabra=11110111  leds=11011010010001100111  esperado=11011010010001100111  valid_pulses=11  @t=714675000
+#   S1 (G1, 11b)       = 10110001010
+#   S2 (G2, 11b)       = 11001010110
+#   PARES (22b tiempo) = 1101101001000110011100
+# [PASS] palabra=11111000  leds=11011010100111000000  esperado=11011010100111000000  valid_pulses=11  @t=717555000
+#   S1 (G1, 11b)       = 10111010000
+#   S2 (G2, 11b)       = 11000110000
+#   PARES (22b tiempo) = 1101101010011100000000
+# [PASS] palabra=11111001  leds=11011010100111111011  esperado=11011010100111111011  valid_pulses=11  @t=720435000
+#   S1 (G1, 11b)       = 10111011110
+#   S2 (G2, 11b)       = 11000111010
+#   PARES (22b tiempo) = 1101101010011111101100
+# [PASS] palabra=11111010  leds=11011010100100101100  esperado=11011010100100101100  valid_pulses=11  @t=723315000
+#   S1 (G1, 11b)       = 10111001100
+#   S2 (G2, 11b)       = 11000100100
+#   PARES (22b tiempo) = 1101101010010010110000
+# [PASS] palabra=11111011  leds=11011010100100010111  esperado=11011010100100010111  valid_pulses=11  @t=726195000
+#   S1 (G1, 11b)       = 10111000010
+#   S2 (G2, 11b)       = 11000101110
+#   PARES (22b tiempo) = 1101101010010001011100
+# [PASS] palabra=11111100  leds=11011010101001110000  esperado=11011010101001110000  valid_pulses=11  @t=729075000
+#   S1 (G1, 11b)       = 10111101000
+#   S2 (G2, 11b)       = 11000011000
+#   PARES (22b tiempo) = 1101101010100111000000
+# [PASS] palabra=11111101  leds=11011010101001001011  esperado=11011010101001001011  valid_pulses=11  @t=731955000
+#   S1 (G1, 11b)       = 10111100110
+#   S2 (G2, 11b)       = 11000010010
+#   PARES (22b tiempo) = 1101101010100100101100
+# [PASS] palabra=11111110  leds=11011010101010011100  esperado=11011010101010011100  valid_pulses=11  @t=734835000
+#   S1 (G1, 11b)       = 10111110100
+#   S2 (G2, 11b)       = 11000001100
+#   PARES (22b tiempo) = 1101101010101001110000
+# [PASS] palabra=11111111  leds=11011010101010100111  esperado=11011010101010100111  valid_pulses=11  @t=737715000
+#   S1 (G1, 11b)       = 10111111010
+#   S2 (G2, 11b)       = 11000000110
+#   PARES (22b tiempo) = 1101101010101010011100
+# Testbench finalizado @t=737875000
+# ** Note: $finish    : C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt(404)
+#    Time: 737875 ns  Iteration: 2  Instance: /Top_Codificador_vlg_tst
+# 1
+# Break in Module Top_Codificador_vlg_tst at C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt line 404
+# End time: 11:41:52 on Jun 15,2026, Elapsed time: 0:04:30
+# Errors: 0, Warnings: 0

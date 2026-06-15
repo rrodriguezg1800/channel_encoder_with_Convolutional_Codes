@@ -1,0 +1,286 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim
+vAcumulador_Cod
+Z1 !s110 1781545042
+!i10b 1
+!s100 A@O?5`N22RQfCA>CL8eCn1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IWFOO;`1MUWXjdK:T3XCBX0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1761631383
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v
+!i122 5
+L0 6 32
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1781545042.000000
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Acumulador_Cod.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal
+Z9 tCvgOpt 0
+n@acumulador_@cod
+vCodificador
+Z10 !s110 1781545041
+!i10b 1
+!s100 S?;J>2<1NYXSG6b:e`c6=3
+R2
+IZP7W:C@lA<SY2=EHO18Jg1
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v
+!i122 2
+L0 6 89
+R5
+r1
+!s85 0
+31
+Z11 !s108 1781545041.000000
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Codificador.v|
+!i113 1
+R7
+R8
+R9
+n@codificador
+vControl_Antirebote
+R1
+!i10b 1
+!s100 Y9A0m27`QZQHeKjkUzJcA1
+R2
+I1N=nHPcFCO9Do9ACm7_E[2
+R3
+R0
+w1763237651
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v
+!i122 4
+L0 3 26
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Antirrebote.v|
+!i113 1
+R7
+R8
+R9
+n@control_@antirebote
+vControl_Cod
+R1
+!i10b 1
+!s100 FQoWkJ3P_nQaP0Gi47:Sh0
+R2
+ISHc<CQa;9=`R8[<0goQ270
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v
+!i122 6
+L0 4 56
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Control_Cod.v|
+!i113 1
+R7
+R8
+R9
+n@control_@cod
+vDivisor_de_Frecuencia
+R1
+!i10b 1
+!s100 1^o=al>lhG8fM>mmc<U?;0
+R2
+IgP:>:23Z?TY827T57WhBV3
+R3
+R0
+w1762988552
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v
+!i122 3
+L0 22 20
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Divisor_de_Frecuencia.v|
+!i113 1
+R7
+R8
+R9
+n@divisor_de_@frecuencia
+vEntrada_8bits
+R10
+!i10b 1
+!s100 E@8HzfSY;Q2?gV0@HMEYA1
+R2
+I:`YzCBnQSE:;?d0I@2_A?2
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v
+!i122 1
+L0 5 26
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Entrada_8bits.v|
+!i113 1
+R7
+R8
+R9
+n@entrada_8bits
+vParidad_Convolucional
+R1
+!i10b 1
+!s100 c7_gOHzn2K`^<g6TX:H>G3
+R2
+I023eJ@Ekn0FVB0WKX7>^l0
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v
+!i122 9
+L0 4 16
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Paridad_Convolucional.v|
+!i113 1
+R7
+R8
+R9
+n@paridad_@convolucional
+vSerializador_de_Entrada
+R1
+!i10b 1
+!s100 JC:HC6`D@Q<A4aRD9d8X>2
+R2
+Ig0c[f75XmYeK`Dzm;=GnR3
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v
+!i122 7
+L0 5 27
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Serializador_de_Entrada.v|
+!i113 1
+R7
+R8
+R9
+n@serializador_de_@entrada
+vShift_Register
+R1
+!i10b 1
+!s100 _ig6ckY:_2YE;Jcl61m7H2
+R2
+ISUh2ZGCD:QW1GUQb2I^zQ1
+R3
+R0
+R4
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v
+!i122 8
+L0 4 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Shift_Register.v|
+!i113 1
+R7
+R8
+R9
+n@shift_@register
+vTop_Codificador
+R10
+!i10b 1
+!s100 =[YC8b?KdLNcEXng9Qn]S1
+R2
+IoCF;j1_2=41>?4c?OI>;m0
+R3
+R0
+w1763237643
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v
+!i122 0
+L0 3 71
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/Top_Codificador.v|
+!i113 1
+R7
+R8
+R9
+n@top_@codificador
+vTop_Codificador_vlg_tst
+R1
+!i10b 1
+!s100 9E0JQ5?=d>RKRiO`iidN`2
+R2
+Ieel9foKK_K7RUO3TINU?V1
+R3
+R0
+w1762898259
+8C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt
+FC:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt
+!i122 10
+L0 2 406
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim|C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim/Top_Codificador.vt|
+!i113 1
+R7
+!s92 -vlog01compat -work work +incdir+C:/Users/golyp/Documents/ProyectoTerminal_v/OFICIALES/Codificador_Canal/simulation/modelsim
+R9
+n@top_@codificador_vlg_tst
